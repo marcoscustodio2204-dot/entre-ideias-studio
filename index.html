@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#101310" />
   <meta name="description" content="Entre Ideias Studio: planeje e acompanhe carrosséis e Reels filosóficos." />
-  <title>Entre Ideias Studio — Central Criativa</title>
+  <title>Entre Ideias Studio 5.0 — Central Criativa</title>
   <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap');
 :root{--bg:#f7f5f0;--white:#fffefa;--ink:#1e2620;--deep:#101914;--muted:#858c80;--line:#e9e7de;--gold:#bba16a;--accent:#476451;--a-soft:#edf3ed;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',system-ui,-apple-system,sans-serif}
@@ -14,12 +14,148 @@
 @media(max-width:780px){.sidebar{display:none}.topbar{height:65px;padding:0 18px}.top-title{font-size:18px}main{padding:18px 15px 88px}.status{display:none}.hero{min-height:247px}.hero-copy{padding:28px 24px;width:71%}.hero h1{font-size:30px}.hero-art{position:absolute;right:0;top:0;bottom:0;width:48%}.hero-art-title{font-size:24px;right:20px;bottom:29px}.hero-sun{right:0}.hero-pillars{gap:16px}.hero-pillars span{width:25px}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi{padding:17px}.kpi strong{font-size:27px}.two-col{grid-template-columns:1fr}.recommendation{align-items:start}.recommendation>.secondary{display:none}.page-intro{align-items:start}.page-intro h1{font-size:27px}.editor-top{flex-wrap:wrap}.editor-top .grow{flex-basis:100%}.editor-layout{grid-template-columns:1fr}.editor-rail .sticky{position:static}.art-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fffefa;box-shadow:0 -7px 20px #1f302010;padding:8px 3px max(8px,env(safe-area-inset-bottom));z-index:5;justify-content:space-around;border-top:1px solid #e8e8df}.mobile-nav button{display:flex;flex-direction:column;align-items:center;gap:3px;background:transparent;color:#849184;font-size:9px;font-weight:700;padding:3px 6px;min-width:54px}.mobile-nav button span{font-size:20px}.mobile-nav button.active{color:#355d40}footer{padding-bottom:45px}}
 @media(max-width:460px){.hero{min-height:244px}.hero-copy{width:81%;padding:27px 23px}.hero h1{font-size:29px;position:relative;z-index:1}.hero-art{opacity:.45;width:60%}.hero p{max-width:280px}.hero-copy .primary{position:relative;z-index:1}.kpi strong{font-size:26px}.mini-note{max-width:140px;text-align:right;line-height:1.5}.panel{padding:18px}.slide-card{grid-template-columns:52px minmax(0,1fr);gap:10px;padding:10px}.slide-index{height:132px}.slide-index strong{font-size:25px}.slide-text{font-size:15px}.slide-header{align-items:start}.slide-tag{white-space:nowrap}.art-grid{grid-template-columns:1fr}.art-card{min-height:125px}.page-intro .secondary{font-size:10px;padding:9px}.library-stats{justify-content:space-between;gap:10px}.library-stats strong{font-size:23px}.metric-form{grid-template-columns:1fr}.editor-top .field.short{min-width:0;flex:1}.editor-top>.primary{flex:1}.scene{grid-template-columns:55px 1fr;gap:9px}}
 
+
+/* Entre Ideias Studio — versão 2: controles locais e responsivos */
+.studio-v2{background:var(--white);border:1px solid var(--line);padding:17px;border-radius:13px;margin:0 0 16px}
+.studio-v2 h3{font-family:var(--serif);font-size:19px;margin:0 0 7px}.v2-info{font-size:11px;color:#788579;line-height:1.6;margin:5px 0 12px}
+.v2-tag{background:#e6eee6;color:#46654c;padding:5px 9px;border-radius:8px;display:inline-block;font-size:10px;font-weight:700;margin-bottom:9px}
+.v2-form{display:grid;grid-template-columns:minmax(0,2fr) 1fr auto;align-items:end;gap:10px}.v2-form .field{min-width:0}
+.v2-form input,.v2-form select,.v2-select,.v2-search{width:100%;min-height:41px;background:#fff;border:1px solid #dce3d9;border-radius:9px;color:#223629;padding:10px;font-size:12px}
+.v2-past{display:flex;gap:12px;align-items:end}.v2-past .field{flex:1;min-width:0}
+.v2-caption{width:100%;min-height:125px;resize:vertical;border-radius:9px;border:1px solid #dce3d9;padding:11px;color:#23382a;font-size:13px;line-height:1.5;background:#fff}
+.v2-quality{font-size:11px;border-top:1px solid var(--line);padding-top:12px;margin-top:12px;color:#697769;line-height:1.6}.v2-quality ul{padding-left:16px;margin:7px 0 0}.v2-quality .warn{color:#a27435}
+.v2-art-picker{width:100%;margin-top:10px}.v2-art-picker select{width:100%;min-height:35px;border:1px solid #dce3d9;border-radius:7px;background:#fff;color:#3d5846;font-size:11px;padding:6px}
+.v2-filters{display:grid;grid-template-columns:2fr 1fr;gap:10px;margin-bottom:15px}
+.art-card[hidden]{display:none!important}
+.v2-caption-title{display:flex;align-items:center;justify-content:space-between;gap:10px}
+@media(max-width:680px){.v2-form{grid-template-columns:1fr 1fr}.v2-form>.field:first-child{grid-column:1/-1}.v2-form>.primary{grid-column:1/-1}.studio-v2{padding:14px}.v2-past{display:block}.v2-filters{grid-template-columns:1fr}}
+
+/* ENTRE IDEIAS STUDIO 3.0 — progressivo, sem bibliotecas externas */
+:root{--studio-shade:#eaf0e8}
+.v3-page-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px}
+.v3-panel{background:var(--white);border:1px solid var(--line);border-radius:13px;padding:20px;margin-bottom:16px}
+.v3-panel h2{font-family:var(--serif);font-size:23px;font-weight:600;margin:5px 0 9px}
+.v3-panel h3{font-size:15px;margin:0 0 9px}
+.v3-muted{font-size:12px;color:#77867a;line-height:1.6;margin:5px 0 14px}
+.v3-eyebrow{font-size:10px;letter-spacing:1.5px;color:#8e986f;font-weight:800}
+.v3-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.v3-input, .v3-select{min-height:41px;border:1px solid #dce4d9;border-radius:9px;background:white;color:#25392c;padding:10px 11px;width:100%;font:inherit;font-size:12px}
+.v3-fields{display:grid;grid-template-columns:1fr 145px 145px;gap:9px;margin-bottom:11px;align-items:end}
+.v3-tag{border-radius:10px;background:#e9eee6;color:#49644f;display:inline-block;font-size:10px;font-weight:700;padding:5px 9px}
+.v3-tag.warn{color:#a37535;background:#f7ecdb}
+.v3-box-note{background:#f1f3ed;border:1px solid #e4eadf;border-radius:10px;font-size:12px;line-height:1.6;color:#617362;padding:12px;margin:12px 0}
+.v3-line{border-top:1px solid var(--line);margin:15px 0}
+.v3-dash-inner{display:grid;grid-template-columns:minmax(0,1.3fr) 1fr;gap:15px}
+.v3-dash-inner strong{font-family:var(--serif);font-size:23px;color:#233c2d}
+.v3-chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.v3-slot{padding:13px 0;border-bottom:1px solid #e7e9e2}
+.v3-slot:last-child{border-bottom:0}
+.v3-slot-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.v3-slot-grid{display:grid;grid-template-columns:150px 1fr 120px 135px;gap:9px;align-items:end;margin:12px 0 9px}
+.v3-slot .field{letter-spacing:0;font-size:10px}
+.v3-slot button{font-size:11px}
+.v3-preview-shell{display:flex;justify-content:center;margin:12px auto;width:min(100%,270px)}
+.v3-preview{position:relative;width:100%;aspect-ratio:9/16;border-radius:17px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;padding:28px 20px;text-align:center;color:#f5eddb;background:linear-gradient(145deg,#18251d,#4f5b42 65%,#1e3024);box-shadow:0 12px 38px #1e302030}
+.v3-preview:after{content:'';position:absolute;inset:18px;border:1px solid #d4bd8660;pointer-events:none}
+.v3-preview:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,#b3986640,transparent 45%);pointer-events:none}
+.v3-preview .painting{z-index:1;font-family:var(--serif);color:#c9b991;font-size:15px;line-height:1.45;font-style:italic}
+.v3-preview .message{z-index:1;font-family:var(--serif);font-size:clamp(16px,4vw,22px);line-height:1.35;font-weight:600;text-shadow:0 2px 6px #152018}
+.v3-preview .brandline{z-index:1;position:absolute;bottom:26px;font-family:var(--sans);letter-spacing:2px;color:#b4aa8b;font-size:9px}
+.v3-preview-controls{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.v3-preview-controls button{min-width:70px}
+.v3-variant{padding:12px 14px;background:#f9faf6;border:1px solid #ebede5;border-radius:10px;margin:9px 0}
+.v3-variant p{margin:0 0 10px;font-family:var(--serif);font-size:16px;line-height:1.5;color:#25392a}
+.v3-table{width:100%;min-width:570px;table-layout:auto}
+.v3-kpi-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:14px}
+.v3-stat{background:#f7f9f4;padding:15px;border-radius:12px}
+.v3-stat strong{font-family:var(--serif);font-size:24px;display:block;letter-spacing:-.5px}
+.v3-stat span{font-size:10px;color:#748478;line-height:1.5}
+.v3-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:13px 0}
+.v3-compare-output{line-height:1.8;background:#f7f9f4;border-radius:9px;padding:14px;font-size:12px}
+.v3-timeline{display:grid;gap:9px}
+.v3-shot{padding:13px;border:1px solid #e5e9e0;border-radius:10px;background:#fcfcf8}
+.v3-shot strong{font-size:12px}.v3-shot small{display:block;color:#7b8b7d;font-size:10px;margin:7px 0}
+.v3-shot pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;font-size:11px;line-height:1.55}
+.v3-callout{margin:16px 0;color:#536854;background:#eaf0e8;border-radius:12px;padding:13px;font-size:11px;line-height:1.6}
+.v3-mobile-plan-label{font-size:9px;letter-spacing:.5px}
+@media(max-width:1080px){.v3-page-grid{grid-template-columns:1fr}.v3-dash-inner{grid-template-columns:1fr}}
+@media(max-width:700px){.v3-panel{padding:16px}.v3-fields{grid-template-columns:1fr 1fr}.v3-fields label:first-child{grid-column:1/-1}.v3-slot-grid{grid-template-columns:1fr 1fr}.v3-slot-grid label:nth-child(2){grid-column:1/-1;grid-row:1}.v3-kpi-grid{grid-template-columns:1fr 1fr}.v3-stat strong{font-size:19px}.v3-preview-shell{width:min(100%,235px)}.v3-compare{grid-template-columns:1fr}}
+@media(max-width:460px){.mobile-nav{gap:0;padding-left:0;padding-right:0}.mobile-nav button{min-width:0;flex:1;font-size:9px;padding-left:1px;padding-right:1px}.mobile-nav button span{font-size:18px}}
+
+/* STUDIO_V4_STYLE */
+:root{--v4-navy:#14291c;--v4-warm:#bfaf84}
+.v4-panel{background:#fffefa;border:1px solid #e2e9de;border-radius:14px;padding:18px;margin:0 0 16px}
+.v4-panel h2{font-family:var(--serif);font-size:24px;font-weight:600;margin:6px 0 8px}.v4-panel h3{font-family:var(--serif);font-size:19px;margin:4px 0 9px}
+.v4-muted{font-size:12px;color:#7c887e;line-height:1.65}.v4-kicker{font-size:10px;letter-spacing:1.5px;font-weight:800;color:#8c784f}
+.v4-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.v4-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;align-items:start}.v4-grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.v4-box{background:#f5f7f2;border:1px solid #e5ebe2;padding:15px;border-radius:11px;min-width:0}.v4-box b{display:block;font-family:var(--serif);font-size:29px;line-height:1.2;margin:4px 0}.v4-box small{font-size:11px;color:#69796c}.v4-box strong{font-size:12px}
+.v4-file{display:flex;justify-content:center;gap:8px;align-items:center;cursor:pointer;background:#405e4b;color:#fff;padding:13px;border-radius:9px;font-weight:700;font-size:12px}
+.v4-file:focus-within{outline:2px solid #9dae9c}.v4-input,.v4-select,.v4-textarea{width:100%;background:#fff;border:1px solid #dfe7dd;border-radius:10px;color:#283f30;padding:11px 13px;font:inherit;font-size:13px;min-height:42px}
+.v4-textarea{min-height:145px;resize:vertical;line-height:1.65}.v4-field{display:grid;gap:8px;margin-bottom:13px}.v4-field label{font-size:10px;letter-spacing:1.2px;font-weight:750;color:#738374}
+.v4-preview-stage{width:min(255px,100%);margin:0 auto;background:linear-gradient(145deg,#111e17,#2b4030);aspect-ratio:9/16;position:relative;overflow:hidden;border:5px solid #fff;border-radius:15px;box-shadow:0 10px 35px #14241624;color:#f7f0da}
+.v4-preview-stage img{width:100%;height:100%;object-fit:cover;display:none;position:absolute;inset:0}.v4-preview-stage.is-loaded img{display:block}
+.v4-preview-stage .v4-photo-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,13,9,.48),rgba(13,24,16,.08) 32%,rgba(6,12,9,.7));pointer-events:none}
+.v4-preview-stage .v4-photo-text{position:absolute;left:8%;right:8%;top:38%;text-align:center;font-family:var(--serif);font-size:clamp(16px,3vw,21px);line-height:1.27;text-shadow:0 3px 11px rgba(0,0,0,.95);word-wrap:break-word;white-space:pre-line}
+.v4-preview-stage .v4-photo-brand{position:absolute;bottom:4%;width:100%;text-align:center;color:#ddd1a8;letter-spacing:2px;font-size:7px;font-weight:bold}
+.v4-preview-stage .v4-photo-count{position:absolute;top:4%;right:7%;color:#e4d9b2;font-size:10px}.v4-visual-tip{border-left:3px solid #b7a16e;padding:10px 13px;background:#f6f1e6;color:#786745;font-size:11px;line-height:1.6}
+.v4-aic-search{display:flex;gap:9px}.v4-aic-search input{flex:1;min-width:0}.v4-art-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:15px}.v4-art-result{border:1px solid #e0e4db;border-radius:10px;background:#fdfefa;padding:9px;min-width:0}.v4-art-result img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:7px;background:#e3e4dd}.v4-art-result strong{font-size:11px;line-height:1.3;display:block;margin:7px 0 3px}.v4-art-result p{font-size:10px;color:#7f857a;line-height:1.4;margin-bottom:7px}.v4-art-result .v4-actions{margin:3px 0;gap:3px}.v4-art-result button{font-size:10px;padding:7px}.v4-art-result a{font-size:10px}
+.v4-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.v4-step{border:1px solid #e1e9e0;border-radius:11px;background:#fcfdf9;padding:13px}.v4-step b{font-size:23px;color:#63846b;font-family:var(--serif)}.v4-step strong{display:block;margin:5px 0;font-size:12px}.v4-step small{display:block;font-size:11px;color:#7e8a7e;line-height:1.5}
+.v4-count{font-variant-numeric:tabular-nums}.v4-mini-help{font-size:11px;color:#6f7b72}.v4-danger{color:#995740!important;border:1px solid #ead5cb!important}
+.v4-idea{display:flex;gap:12px;align-items:start;padding:12px;border-bottom:1px solid #e7eee5}.v4-idea:last-child{border-bottom:0}.v4-idea>div{flex:1;min-width:0}.v4-idea strong{font-size:12px}.v4-idea p{font-size:11px;color:#778578;margin:5px 0}.v4-idea button{white-space:nowrap}
+.v4-pill{border-radius:20px;font-size:10px;font-weight:750;padding:5px 8px;background:#eaf0e6;color:#507157}.v4-score{height:7px;background:#edf1e9;border-radius:12px;overflow:hidden;margin:8px 0}.v4-score-fill{height:100%;background:#789b77;border-radius:12px}
+.v4-has-image>#v4-preview-image{display:block!important;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:saturate(.83)}.v3-preview.v4-has-image::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,#060c08a8,#06110834 37%,#050b088e);z-index:1}.v3-preview.v4-has-image>#v3-preview-art{opacity:0}.v3-preview.v4-has-image .message,.v3-preview.v4-has-image .brandline{z-index:2;position:relative;text-shadow:0 3px 12px #000}
+.v4-snackbar{background:#f2f5ef;padding:12px;border-radius:9px;color:#536b56;font-size:11px;line-height:1.6}.v4-local-privacy{display:block;font-size:11px;color:#7d8f7c;margin:10px 0}
+.v4-hidden{display:none!important}
+@media(max-width:1000px){.v4-grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.v4-steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.v4-grid{grid-template-columns:1fr}.v4-art-results{grid-template-columns:repeat(2,minmax(0,1fr))}.v4-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.v4-preview-stage{width:210px}.v4-panel{padding:16px}.v4-aic-search{flex-wrap:wrap}.v4-aic-search button{width:100%}.v4-grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.v4-box b{font-size:25px}.v4-idea{flex-wrap:wrap}.v4-idea button{margin-left:auto}}
+@media(max-width:420px){.mobile-nav button{min-width:44px;padding:3px 2px}.mobile-nav{gap:0}.v4-art-results{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ENTRE IDEIAS STUDIO 5: atelie e comando de producao */
+:root{--v5-gold:#ad9561;--v5-forest:#234632}
+.v5-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:16px 0}
+.v5-tag{display:inline-flex;gap:6px;align-items:center;background:#ecf2ea;color:#45664e;border-radius:100px;padding:6px 11px;font-weight:700;font-size:11px}
+.v5-card{background:#fffefa;border:1px solid #e3e9df;border-radius:14px;padding:19px;margin:0 0 17px;min-width:0}
+.v5-card h2{font-family:var(--serif);font-size:23px;margin:6px 0 8px;font-weight:600}
+.v5-card h3{font-family:var(--serif);font-size:19px;margin:3px 0 8px;font-weight:600}
+.v5-label{display:block;font-size:10px;letter-spacing:1px;font-weight:750;color:#687f6d;margin:0 0 7px}
+.v5-caption{color:#728275;font-size:12px;line-height:1.6;margin:7px 0 12px}
+.v5-field{min-width:0}.v5-field input,.v5-field select,.v5-field textarea{width:100%;border:1px solid #dbe5da;background:#fff;color:#263e2d;border-radius:9px;font-family:var(--sans);font-size:13px;padding:10px 12px;min-height:42px}
+.v5-field textarea{min-height:70px;resize:vertical}
+.v5-row{display:flex;align-items:center;gap:11px;flex-wrap:wrap}.v5-colgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.v5-grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.v5-mini{padding:12px;border:1px solid #e2e9de;background:#f8faf6;border-radius:10px}.v5-mini strong{display:block;font-family:var(--serif);font-size:26px;margin:4px 0}.v5-mini span{font-size:10px;color:#758575}
+.v5-progress{width:100%;height:9px;background:#e6ece3;border-radius:20px;overflow:hidden;margin:10px 0}.v5-progress>div{background:linear-gradient(90deg,#799a7a,#3f6650);height:100%;border-radius:20px;transition:width .2s}
+.v5-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.v5-checks label{display:flex;gap:9px;align-items:flex-start;background:#f6f8f4;border:1px solid #edf1ea;border-radius:9px;padding:11px;font-size:12px;line-height:1.4}.v5-checks input{accent-color:#476b52;margin-top:1px}
+.v5-note{background:#f5f0e6;border:1px solid #ece2ce;color:#786a4e;border-radius:10px;padding:12px;font-size:12px;line-height:1.65;margin:10px 0}
+.v5-warnings{padding:0 0 0 18px;color:#8a6e48;font-size:11px;line-height:1.6}.v5-warnings li{margin:5px 0}
+.v5-workflow{display:grid;grid-template-columns:1.2fr 1fr;gap:15px;align-items:start}
+.v5-formats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.v5-hint{font-size:11px;line-height:1.5;color:#7d8a7f;margin:8px 0}
+.v5-preview-lines{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;margin-top:12px}.v5-preview-lines>span{background:#dfe6dc;height:6px;border-radius:6px}.v5-preview-lines>span.ok{background:#648b69}
+.v5-meta-list{margin:12px 0 4px;display:flex;flex-direction:column;gap:7px}.v5-meta-list>li{font-size:12px;color:#5d745f}
+.v5-media-label{display:inline-flex;cursor:pointer;padding:12px 15px;border-radius:9px;background:#3e6550;color:white;font-size:12px;font-weight:700;align-items:center;justify-content:center;gap:7px}
+.v5-media-label:focus-within{outline:2px solid var(--gold)}
+.v5-muted{color:#8a988c;font-size:11px}.v5-button-row{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.v5-credit-info{font-size:11px;color:#677b6c;line-height:1.55;overflow-wrap:anywhere}
+.v5-theme-flag{background:#eef3e9;color:#416948;padding:5px 8px;border-radius:9px;font-size:11px;font-weight:700}
+.v5-small-print{font-size:10px;color:#8a978b;line-height:1.45;margin-top:8px}
+.v5-metric-table{width:100%;border-collapse:collapse;min-width:0}.v5-metric-table td{padding:9px 4px;font-size:11px}
+.v5-feature-subtitle{font-weight:700;font-size:13px;color:#2a4b34}
+.v5-note-good{background:#edf3ec;border-color:#e2ede1;color:#456c4f}
+.v5-bar{height:9px;background:#e7eae3;border-radius:8px;overflow:hidden}.v5-bar>span{display:block;height:100%;background:#557c60}
+.v5-click{cursor:pointer;background:transparent;text-decoration:underline;text-underline-offset:2px;color:#315a3c}
+@media(max-width:920px){.v5-workflow{grid-template-columns:1fr}.v5-grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.v5-card{padding:15px}.v5-checks{grid-template-columns:1fr}.v5-colgrid{grid-template-columns:1fr}.v5-formats{grid-template-columns:1fr 1fr}.v5-grid3{grid-template-columns:1fr 1fr}.v5-card h2{font-size:21px}.v5-toolbar{align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){.v5-progress>div{transition:none}}
+.v5-video-controls{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:14px 0}.v5-video-screen{display:block;margin:12px auto;background:#16281b;border-radius:13px;max-width:100%;aspect-ratio:9/16;width:min(250px,90%);box-shadow:0 12px 32px #101a1430}.v5-video-console{font-size:11px;color:#748576;line-height:1.5;text-align:center}.v5-video-buttons{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}.v5-video-buttons button:disabled{opacity:.55;cursor:progress}
+@media(max-width:440px){.v5-video-controls{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
   <div class="app-shell">
     <aside class="sidebar">
-      <div class="brand"><span class="brand-mark">EI<span class="brand-dot">.</span></span><div><strong>Entre Ideias</strong><small>STUDIO · BETA 01</small></div></div>
+      <div class="brand"><span class="brand-mark">EI<span class="brand-dot">.</span></span><div><strong>Entre Ideias</strong><small>STUDIO · BETA 03</small></div></div>
       <div class="side-label">SEU ESTÚDIO</div>
       <nav class="menu" aria-label="Seções do estúdio">
         <button type="button" class="menu-item active" data-nav="home"><span>▦</span> Visão geral</button>
@@ -182,7 +318,854 @@ document.addEventListener('input',e=>{if(e.target.matches('[data-slide]')){const
 document.addEventListener('change',e=>{if(e.target.id==='project-status'){const p=current();if(p){p.status=e.target.value;save();renderLibrary()}}if(e.target.matches('[data-check]')){const i=Number(e.target.dataset.check);state.checklist=e.target.checked?[...new Set([...state.checklist,i])]:state.checklist.filter(x=>x!==i);save();renderHome()}});
 qs('#metric-form').addEventListener('submit',e=>{e.preventDefault();state.metrics.push({id:'manual-'+Date.now(),date:qs('#m-date').value,title:qs('#m-title').value.trim(),views:Number(qs('#m-views').value),follows:Number(qs('#m-follows').value),source:'Inserido manualmente'});save();e.target.reset();renderMetrics();toast('Nova medição registrada.')});
 qs('#backup-import').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const raw=JSON.parse(await f.text());if(raw.version!==1||!Array.isArray(raw.projects)||!Array.isArray(raw.metrics)||!Array.isArray(raw.artUsed))throw Error('Formato incompatível');if(!confirm('Substituir os dados locais pelo backup selecionado?'))return;state={...initialState(),...raw};save();render();toast('Backup restaurado.')}catch(err){toast('Arquivo inválido: use um backup deste estúdio.')}finally{e.target.value=''}});
+
+/* Versão 2: melhorias locais. Mantém a chave de armazenamento e o backup v1. */
+const v2Themes=[
+ {id:'dialogue-v2',title:'5 PERGUNTAS QUE PODEM MUDAR UMA DISCUSSÃO',type:'Diálogo',slides:[
+ '1. Discordamos dos fatos ou do significado das palavras?',
+ '2. Que parte da opinião do outro consigo compreender?',
+ '3. Que evidência poderia fazer você rever sua posição?',
+ '4. Estou tentando entender ou apenas responder?',
+ '5. É possível discordar sem transformar tudo em disputa?'],
+ cta:'Qual dessas perguntas faria diferença em um debate que você já viveu?',
+ caption:'Discordar pode ensinar alguma coisa, quando o debate não é apenas uma competição por quem vence.\n\n#Filosofia #Dialogo #PensamentoCritico #EntreIdeias'},
+ {id:'progress-v2',title:'5 PERGUNTAS QUE DESAFIAM A IDEIA DE PROGRESSO',type:'Sociedade',slides:[
+ '1. Toda mudança representa uma melhoria?',
+ '2. Quem decide o que significa avançar?',
+ '3. Podemos crescer economicamente e perder algo essencial?',
+ '4. Mais tecnologia significa necessariamente mais liberdade?',
+ '5. O que devemos medir para chamar uma mudança de progresso?'],
+ cta:'Qual dessas perguntas deveria orientar nossas escolhas coletivas?',
+ caption:'Costumamos chamar muitas mudanças de progresso. Mas o que significa realmente avançar?\n\n#Filosofia #Sociedade #Conhecimento #EntreIdeias'},
+ {id:'technology-v2',title:'5 DILEMAS FILOSÓFICOS DA ERA DA IA',type:'Tecnologia',slides:[
+ '1. Uma máquina pode decidir sem compreender consequências?',
+ '2. Quanto da nossa atenção entregamos sem perceber?',
+ '3. Quem responde por uma decisão automatizada?',
+ '4. Respostas fáceis nos tornam melhores em perguntar?',
+ '5. Se tudo fosse registrado, o esquecimento teria valor?'],
+ cta:'Qual dessas questões merece mais debate?',
+ caption:'Ferramentas mudam, mas perguntas sobre poder, responsabilidade e liberdade continuam relevantes.\n\n#Filosofia #Tecnologia #Etica #EntreIdeias'},
+ {id:'thinking-v2',title:'5 MANEIRAS DE FAZER PERGUNTAS MELHORES',type:'Conhecimento',slides:[
+ '1. Troque “quem está certo?” por “como sabemos?”.',
+ '2. Pergunte o que mudaria uma conclusão.',
+ '3. Separe o que aconteceu da interpretação.',
+ '4. Procure exemplos que desafiem sua explicação.',
+ '5. Descubra o que ainda precisa compreender.'],
+ cta:'Qual dessas maneiras de perguntar você gostaria de praticar?',
+ caption:'Uma pergunta bem construída pode revelar limites que uma resposta rápida esconde.\n\n#Conhecimento #Filosofia #PensamentoCritico #EntreIdeias'},
+ {id:'silence-v2',title:'5 FORMAS DE ENXERGAR O SILÊNCIO',type:'Experiência humana',slides:[
+ '1. Ficar em silêncio significa não ter nada a dizer?',
+ '2. Uma pausa pode comunicar mais que uma resposta?',
+ '3. Por que é difícil conviver com questões sem solução?',
+ '4. Escutar exige suspender nossa vontade de responder?',
+ '5. O silêncio é ausência de pensamento ou espaço para pensar?'],
+ cta:'Quando o silêncio foi mais importante que uma resposta para você?',
+ caption:'Nem todo silêncio é vazio. Às vezes, é o espaço necessário para compreender.\n\n#Filosofia #Reflexao #Escuta #EntreIdeias'}
+];
+for(const t of v2Themes){if(!packs.some(p=>p.id===t.id))packs.push(t)}
+const v2TopicPanel=document.createElement('section');
+v2TopicPanel.className='studio-v2';
+v2TopicPanel.innerHTML='<span class="v2-tag">NOVO · STUDIO 2.0</span><h3>Transformar sua ideia em carrossel</h3><p class="v2-info">Escolha seu próprio assunto. O sistema cria um rascunho estruturado, sem usar IA externa. Personalize o raciocínio e confira a precisão antes de publicar.</p><div class="v2-form"><label class="field">ASSUNTO<input id="v2-topic" maxlength="80" placeholder="Ex.: o valor de admitir um erro"></label><label class="field">FORMATO<select id="v2-angle"><option value="questions">5 perguntas</option><option value="practices">5 práticas</option></select></label><button type="button" class="primary" id="v2-create">Criar roteiro ✦</button></div>';
+qs('#page-generate .editor-top').before(v2TopicPanel);
+const v2Past=document.createElement('section');
+v2Past.className='studio-v2 v2-past';
+v2Past.innerHTML='<label class="field">REABRIR CARROSSEL SALVO<select id="v2-history" class="v2-select"><option>Sem projetos</option></select></label><span id="v2-history-count" class="v2-tag">0 salvos</span>';
+qs('#page-generate .editor-layout').before(v2Past);
+const v2Caption=document.createElement('section');
+v2Caption.className='studio-v2';
+v2Caption.style.marginTop='18px';
+v2Caption.innerHTML='<div class="v2-caption-title"><h3>Legenda e hashtags</h3><button class="ghost sm" id="v2-copy-caption" type="button">Copiar</button></div><p class="v2-info">Editar aqui também altera a legenda exportada. Os dados são armazenados neste navegador.</p><textarea id="v2-caption" class="v2-caption" aria-label="Legenda do carrossel"></textarea><div id="v2-quality" class="v2-quality"></div>';
+qs('#page-generate .editor-rail .sticky').append(v2Caption);
+const v2Filter=document.createElement('div');
+v2Filter.className='v2-filters';
+v2Filter.innerHTML='<input class="v2-search" id="v2-search" placeholder="Buscar pintura ou artista" aria-label="Buscar pintura"><select class="v2-select" id="v2-used-filter" aria-label="Filtrar obras"><option value="all">Todas as pinturas</option><option value="available">Ainda não utilizadas</option><option value="used">Já utilizadas</option></select>';
+qs('#art-grid').before(v2Filter);
+function v2QualityCheck(){
+ const p=current(),dest=qs('#v2-quality');
+ if(!p){dest.textContent='Crie um projeto para ver alertas de revisão.';return}
+ let issues=[];
+ if(p.slides.some(x=>String(x).length>155))issues.push('Há slides com mais de 155 caracteres. Avalie diminuir o texto.');
+ if(new Set(p.artIds).size<p.artIds.length)issues.push('Uma pintura aparece em mais de um slide.');
+ if(state.projects.some(q=>q.id!==p.id&&q.title.toLocaleLowerCase('pt-BR')===p.title.toLocaleLowerCase('pt-BR')))issues.push('Este título já existe em outro projeto.');
+ if(((p.caption||'').match(/#[\p{L}\p{N}_]+/gu)||[]).length>4)issues.push('Mais de quatro hashtags na legenda.');
+ dest.innerHTML=issues.length?'<b class="warn">Verificar antes de publicar:</b><ul>'+issues.map(x=>'<li>'+safe(x)+'</li>').join('')+'</ul>':'<b style="color:#507658">Sem alertas automáticos.</b><p class="v2-info">Ainda é necessário revisar fatos, conceitos e licenças de cada imagem.</p>';
+}
+const v2OldGenerator=renderGenerator;
+renderGenerator=function(){
+ v2OldGenerator();
+ const p=current(),history=qs('#v2-history');
+ history.innerHTML='<option value="">Selecione um rascunho</option>'+state.projects.map(x=>'<option value="'+safe(x.id)+'">'+safe(x.title)+' · '+safe(x.created)+'</option>').join('');
+ history.value=p?.id||'';
+ qs('#v2-history-count').textContent=state.projects.length+' salvos';
+ qs('#v2-caption').value=p?.caption||'';qs('#v2-caption').disabled=!p;
+ if(p)qsa('.slide-card').forEach((card,i)=>{
+   const foot=qs('.slide-foot',card);if(!foot)return;
+   const label=document.createElement('label');label.className='field v2-art-picker';label.textContent='PINTURA PARA O SLIDE '+(i+1);
+   const select=document.createElement('select');select.dataset.v2Art=String(i);
+   select.innerHTML=art.map(a=>'<option value="'+safe(a.id)+'">'+safe(a.name)+' — '+safe(a.author)+'</option>').join('');
+   select.value=p.artIds[i]||art[0].id;label.append(select);foot.append(label);
+ });
+ v2QualityCheck();
+};
+const v2OldLibrary=renderLibrary;
+renderLibrary=function(){v2OldLibrary();v2FilterLibrary()};
+function v2FilterLibrary(){
+ const search=qs('#v2-search').value.trim().toLocaleLowerCase('pt-BR'),filter=qs('#v2-used-filter').value;
+ qsa('#art-grid .art-card').forEach((card,i)=>{
+  const a=art[i],used=state.artUsed.includes(a.id),match=(a.name+' '+a.author).toLocaleLowerCase('pt-BR').includes(search);
+  card.hidden=!(match&&(filter==='all'||(filter==='used'?used:!used)));
+ });
+}
+function v2Custom(){
+ const raw=qs('#v2-topic').value.trim().replace(/\s+/g,' ');
+ if(raw.length<4){toast('Escreva um assunto com pelo menos quatro caracteres.');return}
+ const angle=qs('#v2-angle').value;
+ const title=(angle==='questions'?'5 PERGUNTAS SOBRE ':'5 FORMAS DE PENSAR SOBRE ')+raw.toLocaleUpperCase('pt-BR');
+ if(state.projects.some(x=>x.title.toLocaleLowerCase('pt-BR')===title.toLocaleLowerCase('pt-BR'))&&!confirm('Este título já está no histórico. Criar outro rascunho?'))return;
+ const questions=[title,'1. O que realmente queremos dizer quando falamos em '+raw+'?','2. Que certeza sobre '+raw+' você nunca questionou?','3. Como alguém que discorda de você entenderia esse assunto?','4. O que mudaria se sua interpretação estivesse equivocada?','5. Que pergunta sobre '+raw+' ainda não sabemos responder?','Qual dessas perguntas você levaria para uma boa conversa?'];
+ const practices=[title,'1. Comece definindo o que '+raw+' significa para você.','2. Identifique de onde vieram suas ideias sobre esse assunto.','3. Procure uma perspectiva que contradiga sua primeira impressão.','4. Separe o que pode comprovar do que apenas supõe.','5. Reavalie sua conclusão à luz de novas informações.','Qual dessas práticas ajuda você a pensar melhor?'];
+ const p={id:'post-'+Date.now(),themeId:'custom-v2',title,format:'7 slides',status:'draft',created:now(),slides:angle==='questions'?questions:practices,artIds:chooseArt(),caption:'Pensar sobre '+raw+' exige mais que aceitar a primeira resposta. Que pergunta você faria?\n\n#Filosofia #PensamentoCritico #EntreIdeias'};
+ state.projects.unshift(p);state.current=p.id;save();render();toast('Rascunho criado. Revise e torne cada pergunta específica.');
+}
+qs('#v2-create').addEventListener('click',v2Custom);
+qs('#v2-copy-caption').addEventListener('click',()=>{const p=current();if(p)copy(p.caption||'')});
+qs('#v2-caption').addEventListener('input',e=>{const p=current();if(p){p.caption=e.target.value;save();v2QualityCheck()}});
+qs('#v2-history').addEventListener('change',e=>{if(e.target.value){state.current=e.target.value;save();render()}});
+qs('#v2-search').addEventListener('input',v2FilterLibrary);
+qs('#v2-used-filter').addEventListener('change',v2FilterLibrary);
+document.addEventListener('change',e=>{if(e.target.matches('[data-v2-art]')){const p=current();if(p){p.artIds[Number(e.target.dataset.v2Art)]=e.target.value;save();renderGenerator();}}});
+document.addEventListener('input',e=>{if(e.target.matches('[data-slide]'))v2QualityCheck()});
+
+/* STUDIO_V3_START — Recursos 100% locais, sem IA remota. */
+const v3Version = '3.0';
+const v3PlannerSeeds = [
+ ['5 experiências mentais que desafiam a identidade','Carrossel','Alcance','identidade e memória'],
+ ['5 pensadores que interpretaram a liberdade de formas diferentes','Carrossel','Seguidores','liberdade e escolhas'],
+ ['Você quer encontrar a verdade ou ter razão?','Reels','Retenção','verdade e ego'],
+ ['5 maneiras de identificar um argumento fraco','Carrossel','Salvamentos','argumentos e raciocínio'],
+ ['5 perguntas que desafiam a consciência humana','Carrossel','Alcance','consciência humana'],
+ ['Quando uma opinião vira identidade','Reels','Retenção','opiniões e identidade'],
+ ['Comparar resultados dos formatos e revisar ganchos','Análise','Aprendizado','resultados editoriais']
+];
+const v3LocalDate = d => { const x = d instanceof Date ? d : new Date(d); return x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0'); };
+function v3SeedPlan(){const d=new Date();return v3PlannerSeeds.map((x,i)=>{const day=new Date(d.getFullYear(),d.getMonth(),d.getDate()+i);return {id:'plan-seed-'+i,date:v3LocalDate(day),title:x[0],format:x[1],goal:x[2],topic:x[3],status:'planned'};});}
+function v3Ensure(){if(!Array.isArray(state.plan))state.plan=v3SeedPlan(); if(!state.ui||typeof state.ui!=='object')state.ui={}; if(!state.ui.v3Started) {state.ui.v3Started=v3LocalDate(new Date()); save();}}
+v3Ensure();
+
+// Novo sexto menu, mantendo os cinco botões originais e o armazenamento da versão anterior.
+for(const target of [qs('.sidebar .menu'),qs('.mobile-nav')]){
+ if(!target) continue;
+ const btn = document.createElement('button'); btn.type='button'; btn.dataset.nav='planner';
+ if(target.classList.contains('menu')){btn.className='menu-item';btn.innerHTML='<span>◷</span> Plano editorial';}
+ else {btn.innerHTML='<span>◷</span><span class="v3-mobile-plan-label">Plano</span>';}
+ target.append(btn);
+}
+const v3Page = document.createElement('section');v3Page.className='page';v3Page.id='page-planner';
+v3Page.innerHTML=`
+ <div class="page-intro"><div><div class="eyebrow">ORGANIZAÇÃO EDITORIAL</div><h1>Plano de publicação</h1><p>Organize ideias, acompanhe a produção e exporte um calendário. Tudo fica salvo neste navegador.</p></div><button class="secondary" data-v3="export-plan">↓ Exportar CSV</button></div>
+ <div class="v3-panel"><span class="v3-eyebrow">PLANEJAMENTO INICIAL</span><h2>Uma semana com método</h2><p class="v3-muted">Sugestões editáveis baseadas em hipóteses de formatos que já funcionaram. Nenhuma publicação é agendada automaticamente.</p><div id="v3-plan-rows"></div><div class="v3-actions" style="margin-top:15px"><button class="primary" data-v3="add-plan">+ Nova pauta</button><button class="ghost" data-v3="export-ics">↓ Calendário .ics</button><button class="ghost" data-v3="reset-plan">Restaurar sugestões</button></div></div>
+ <div class="v3-panel"><h3>Como medir os testes</h3><p class="v3-muted">Compare resultados em janelas equivalentes (por exemplo, 48 horas e 7 dias). Priorize seguidores por 1.000 visualizações, compartilhamentos, salvamentos e retenção quando estiver disponível. Os dados continuam sendo inseridos manualmente.</p></div>`;
+qs('main').append(v3Page);
+const v3Home = document.createElement('section');v3Home.className='v3-panel';
+v3Home.innerHTML='<span class="v3-eyebrow">RECOMENDAÇÃO EDITORIAL · DADOS LOCAIS</span><h2>Próxima decisão de conteúdo</h2><div id="v3-home-insight"></div><div class="v3-actions"><button class="primary sm" data-nav="planner">Abrir calendário</button><button class="ghost sm" data-nav="generate">Criar carrossel</button></div>';
+qs('#page-home .recommendation')?.after(v3Home);
+const v3Preview = document.createElement('section');v3Preview.className='v3-panel';
+v3Preview.innerHTML=`<span class="v3-eyebrow">PRÉVIA · SIMULAÇÃO DE COMPOSIÇÃO</span><h2>Visualizar um slide</h2><p class="v3-muted">A pintura e o texto permanecem separados. Esta prévia serve apenas para avaliar legibilidade e enquadramento, não é uma imagem para publicar.</p>
+<div class="v3-preview-shell"><div class="v3-preview" role="img" aria-label="Prévia ilustrativa de um slide"><span id="v3-preview-art" class="painting"></span><span id="v3-preview-text" class="message"></span><span class="brandline">ENTRE IDEIAS · QUESTIONE TUDO</span></div></div>
+<div class="v3-preview-controls"><button class="ghost sm" data-v3="prev-slide">← Anterior</button><span id="v3-preview-index" class="v3-tag">0 / 0</span><button class="ghost sm" data-v3="next-slide">Próximo →</button></div><div class="v3-actions" style="margin-top:12px"><button class="secondary sm" data-v3="copy-current">Copiar texto</button><button class="ghost sm" data-v3="open-art">Abrir pintura limpa ↗</button></div>`;
+qs('#page-generate .editor-rail .sticky')?.append(v3Preview);
+const v3Variants = document.createElement('section');v3Variants.className='v3-panel';
+v3Variants.innerHTML=`<span class="v3-eyebrow">EXPERIMENTO A/B</span><h2>Testar ganchos diferentes</h2><p class="v3-muted">Três propostas de capa para revisar. Não são resultados de IA nem garantias de alcance. Aplique uma delas sem alterar o restante do roteiro.</p><div id="v3-variants"></div><div class="v3-actions"><button class="ghost sm" data-v3="duplicate-project">Duplicar projeto</button><button class="ghost sm" data-v3="delete-project">Excluir projeto</button></div>`;
+qs('#page-generate .editor-main')?.prepend(v3Variants);
+const v3Metrics = document.createElement('section');v3Metrics.className='v3-panel';
+v3Metrics.innerHTML=`<span class="v3-eyebrow">COMPARADOR DE RESULTADOS</span><h2>O que trouxe seguidores?</h2><div class="v3-kpi-grid" id="v3-metric-stats"></div><div class="v3-compare"><label class="field">PUBLICAÇÃO A<select id="v3-post-a" class="v3-select"></select></label><label class="field">PUBLICAÇÃO B<select id="v3-post-b" class="v3-select"></select></label></div><div id="v3-compare-result" class="v3-compare-output"></div><p class="v3-muted">Comparação descritiva dos dados inseridos ou importados, não uma previsão de viralização. Posts de idades diferentes precisam ser comparados com cautela.</p></section>
+<section class="v3-panel"><h3>Importar métricas CSV</h3><p class="v3-muted">Aceita o CSV exportado pelo próprio Studio (colunas: Data, Título, Visualizações, Novos seguidores). Também aceita separador ponto e vírgula ou vírgula. O arquivo é lido somente no seu navegador.</p><label class="secondary file-btn" style="display:inline-flex">↑ Selecionar CSV<input id="v3-csv-input" type="file" accept=".csv,text/csv" hidden></label><p id="v3-csv-hint" class="v3-muted"></p></section>`;
+qs('#page-metrics .page-intro')?.after(v3Metrics);
+const v3Reels = document.createElement('section');v3Reels.className='v3-panel';
+v3Reels.innerHTML=`<span class="v3-eyebrow">DIREÇÃO DE VÍDEO</span><h2>Prompts para vídeo com IA</h2><p class="v3-muted">Gere instruções independentes por cena para experimentar em um gerador de vídeo externo. Isso não executa nenhum modelo no GitHub nem gera MP4 diretamente.</p><div class="v3-actions"><button class="primary sm" data-v3="copy-all-prompts">Copiar prompts das cenas</button><button class="ghost sm" data-v3="speak-preview">Ouvir narração no aparelho</button><button class="ghost sm" data-v3="stop-preview">Parar</button></div><div class="v3-timeline" id="v3-shot-prompts" style="margin-top:15px"></div><p class="v3-callout">Os prompts pedem imagens sem letras nem legendas. Confira direitos das pinturas usadas e faça a montagem final com narração e texto em editor separado.</p></section>`;
+qs('#page-reels .reels-panel')?.after(v3Reels);
+
+let v3PreviewIndex=0;
+function v3SmartInsights(){
+ const m=(state.metrics||[]).filter(x=>Number(x.views)>0&&Number.isFinite(Number(x.follows)));
+ if(!m.length){qs('#v3-home-insight').innerHTML='<p class="v3-muted">Cadastre resultados para comparar a capacidade de converter visualizações em seguidores.</p>';return;}
+ const eligible=m.filter(x=>Number(x.views)>=500);const ranked=eligible.length?eligible:m;const best=[...ranked].sort((a,b)=>(Number(b.follows)/Number(b.views))-(Number(a.follows)/Number(a.views)))[0];
+ const most=[...m].sort((a,b)=>Number(b.views)-Number(a.views))[0];
+ qs('#v3-home-insight').innerHTML='<div class="v3-dash-inner"><div><span class="v3-tag">Melhor conversão registrada</span><p><strong>'+safe((Number(best.follows)*1000/Number(best.views)).toFixed(1).replace('.',','))+'</strong> seguidores / 1.000 views</p><p class="v3-muted">'+safe(best.title)+'</p></div><div><span class="v3-tag">Maior alcance registrado</span><p><strong>'+fmt(most.views)+'</strong> visualizações</p><p class="v3-muted">'+safe(most.title)+'</p></div></div><p class="v3-muted">Experimente combinar a curiosidade dos temas de maior alcance com a utilidade dos que geram mais seguidores. Estes são registros históricos, não medições ao vivo.</p>';
+}
+function v3MakeVariants(p){
+ if(!p)return [];
+ const type=(p.themeId==='custom-v2'?(p.title.replace(/^5\s+(PERGUNTAS|FORMAS DE PENSAR)\s+SOBRE\s+/i,'')||'FILOSOFIA'):(getTheme(p.themeId)?.type||'filosofia')).toLocaleUpperCase('pt-BR');
+ return [p.slides[0], '5 IDEIAS SOBRE '+type, 'VOCÊ CONSEGUE RESPONDER ESTAS 5 PERGUNTAS?'];
+}
+function v3RenderVariants(){
+ const el=qs('#v3-variants'),p=current();
+ if(!p){el.innerHTML='<p class="v3-muted">Crie ou abra um projeto para testar capas.</p>';return;}
+ const vars=v3MakeVariants(p);el.innerHTML=vars.map((v,i)=>'<div class="v3-variant"><span class="v3-tag">Variação '+String.fromCharCode(65+i)+'</span><p>'+safe(v)+'</p><button class="ghost sm" data-v3-use-variant="'+i+'">Usar na capa</button> <button class="ghost sm" data-v3-copy-variant="'+i+'">Copiar</button></div>').join('');
+}
+function v3RenderPreview(){
+ const p=current();if(!p){qs('#v3-preview-art').textContent='Pintura histórica';qs('#v3-preview-text').textContent='Crie um carrossel para visualizar';qs('#v3-preview-index').textContent='0 / 0';return;}
+ v3PreviewIndex=Math.max(0,Math.min(p.slides.length-1,v3PreviewIndex));
+ const a=getArt(p.artIds[v3PreviewIndex]);
+ qs('#v3-preview-art').textContent=a?a.name:'Pintura a escolher';
+ qs('#v3-preview-text').textContent=p.slides[v3PreviewIndex];
+ qs('#v3-preview-index').textContent=(v3PreviewIndex+1)+' / '+p.slides.length;
+}
+function v3RenderPlan(){
+ v3Ensure();
+ const el=qs('#v3-plan-rows');
+ if(!state.plan.length){el.innerHTML='<p class="v3-muted">Nenhuma pauta ainda. Toque em Nova pauta.</p>';return;}
+ el.innerHTML=state.plan.map((x,i)=>'<div class="v3-slot" data-v3-slot="'+safe(x.id)+'">'+
+ '<div class="v3-slot-top"><strong>PAUTA '+(i+1)+'</strong><span class="v3-tag">'+safe(x.goal||'Geral')+'</span></div>'+ 
+ '<div class="v3-slot-grid"><label class="field">DATA<input type="date" class="v3-input" data-v3-plan="date" value="'+safe(x.date)+'"></label>'+ 
+ '<label class="field">TEMA<input maxlength="180" class="v3-input" data-v3-plan="title" value="'+safe(x.title)+'"></label>'+ 
+ '<label class="field">FORMATO<select class="v3-select" data-v3-plan="format">'+['Carrossel','Reels','Análise'].map(t=>'<option '+(x.format===t?'selected':'')+'>'+t+'</option>').join('')+'</select></label>'+ 
+ '<label class="field">STATUS<select class="v3-select" data-v3-plan="status">'+[['planned','Planejado'],['inprogress','Produzindo'],['published','Publicado']].map(t=>'<option value="'+t[0]+'" '+(x.status===t[0]?'selected':'')+'>'+t[1]+'</option>').join('')+'</select></label></div>'+ 
+ '<div class="v3-actions"><button class="secondary sm" data-v3-plan-use="'+safe(x.id)+'">Usar como tema</button><button class="ghost sm" data-v3-plan-copy="'+safe(x.id)+'">Copiar</button><button class="ghost sm" data-v3-plan-delete="'+safe(x.id)+'">Excluir</button></div></div>').join('');
+}
+function v3MetricRows(){return (state.metrics||[]).filter(x=>x&&Number(x.views)>=0&&Number(x.follows)>=0).map(x=>({...x,rate:Number(x.views)>0?Number(x.follows)*1000/Number(x.views):0}));}
+function v3RenderMetrics(){
+ const ms=v3MetricRows(),valid=ms.filter(x=>Number(x.views)>0),selA=qs('#v3-post-a'),selB=qs('#v3-post-b'),a0=selA.value,b0=selB.value;
+ const opts=ms.map((x,i)=>'<option value="'+i+'">'+safe((x.title||'Sem título').slice(0,70))+' · '+safe(x.date||'')+'</option>').join('');
+ selA.innerHTML=selB.innerHTML=opts;selA.value=a0&&Number(a0)<ms.length?a0:'0';selB.value=b0&&Number(b0)<ms.length?b0:String(Math.min(1,ms.length-1));
+ const total=valid.reduce((n,x)=>n+Number(x.views),0),followers=valid.reduce((n,x)=>n+Number(x.follows),0);
+ qs('#v3-metric-stats').innerHTML='<div class="v3-stat"><strong>'+fmt(valid.length)+'</strong><span>posts com views registradas</span></div><div class="v3-stat"><strong>'+fmt(total)+'</strong><span>views somadas dos registros</span></div><div class="v3-stat"><strong>'+(total?(followers*1000/total).toFixed(1).replace('.',','):'–')+'</strong><span>seguidores por 1.000 views, média ponderada</span></div>';
+ v3Compare();
+}
+function v3Compare(){
+ const ms=v3MetricRows(),a=ms[Number(qs('#v3-post-a').value)],b=ms[Number(qs('#v3-post-b').value)];
+ const el=qs('#v3-compare-result'); if(!a||!b){el.textContent='Adicione ao menos uma medição para comparar.';return;}
+ const delta=a.rate-b.rate,win=delta>0?'A':delta<0?'B':'Empate';
+ el.innerHTML='<b>A:</b> '+safe(a.title)+' — '+fmt(a.views)+' views, '+fmt(a.follows)+' seguidores, '+a.rate.toFixed(1).replace('.',',')+' seg./1k<br><b>B:</b> '+safe(b.title)+' — '+fmt(b.views)+' views, '+fmt(b.follows)+' seguidores, '+b.rate.toFixed(1).replace('.',',')+' seg./1k<br><strong>Maior conversão: '+win+'</strong> · diferença de '+Math.abs(delta).toFixed(1).replace('.',',')+' seg./1k';
+}
+function v3BuildPrompt(i,scene,p){
+ const a=getArt(p.artIds[Math.min(i,p.artIds.length-1)]);
+ return 'Cinematic vertical 9:16 video, 5 seconds. An atmospheric scene in the style of a classical oil painting with a marble library, subtle candlelight, soft grain and realistic painterly texture. Inspired by the composition and era of '+(a?.name||'Renaissance painting')+'; gentle slow camera push, almost imperceptible movement, natural shadows, restrained gold and sepia palette. Philosophical and contemplative mood. No words, no subtitles, no logos, no speaking. Scene concept: '+scene.visual+'. Avoid distortions to faces, hands and classical architecture.';
+}
+function v3RenderReels(){
+ const p=current(),el=qs('#v3-shot-prompts');
+ if(!p){el.innerHTML='<p class="v3-muted">Primeiro crie ou abra um carrossel.</p>';return;}
+ el.innerHTML=reelScenes().map((sc,i)=>'<div class="v3-shot"><strong>Cena '+(i+1)+' · '+sc.start+'–'+sc.end+'s</strong><small>NARRAÇÃO: '+safe(sc.speech)+'</small><pre>'+safe(v3BuildPrompt(i,sc,p))+'</pre><button class="ghost sm" data-v3-copy-prompt="'+i+'">Copiar prompt</button></div>').join('');
+}
+// Integração com o fluxo já implementado no MVP e versão 2.
+const v3OriginalSetPage=setPage;
+setPage=function(id){v3OriginalSetPage(id); if(id==='planner')qs('#section-title').textContent='Plano editorial';};
+const v3OriginalRender=render;
+render=function(){v3Ensure();v3OriginalRender();v3SmartInsights();v3RenderPreview();v3RenderVariants();v3RenderPlan();v3RenderMetrics();v3RenderReels();};
+function v3GetPlan(id){return state.plan.find(x=>x.id===id)}
+function v3Csv(rows){return '\ufeff'+rows.map(r=>r.map(x=>'"'+String(x??'').replaceAll('"','""')+'"').join(';')).join('\r\n');}
+function v3ExportPlan(){download('entre-ideias-plano-editorial.csv',v3Csv([['Data','Tema','Formato','Objetivo','Status'],...state.plan.map(x=>[x.date,x.title,x.format,x.goal,x.status])]),'text/csv;charset=utf-8');}
+function v3ExportICS(){
+ const clean=t=>String(t||'').replace(/\\/g,'\\\\').replace(/\r?\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;');
+ const val=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Entre Ideias Studio//Plano Editorial 3.0//PT-BR'];
+ for(const x of state.plan){if(!/^\d{4}-\d{2}-\d{2}$/.test(x.date))continue;const d=x.date.replaceAll('-','');const next=new Date(x.date+'T12:00:00');next.setDate(next.getDate()+1);val.push('BEGIN:VEVENT','UID:'+x.id+'@entre-ideias-studio','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'').replace('Z','Z'),'DTSTART;VALUE=DATE:'+d,'DTEND;VALUE=DATE:'+v3LocalDate(next).replaceAll('-',''),'SUMMARY:'+clean(x.title),'DESCRIPTION:'+clean('Formato: '+x.format+' | Objetivo: '+x.goal+' | Estado: '+x.status),'END:VEVENT');}
+ val.push('END:VCALENDAR');download('entre-ideias-calendario.ics',val.join('\r\n'),'text/calendar;charset=utf-8');
+}
+function v3ParseCSV(text){
+ text=String(text).replace(/^\uFEFF/,''); const delimiter=(text.split(/\r?\n/,1)[0].match(/;/g)||[]).length>(text.split(/\r?\n/,1)[0].match(/,/g)||[]).length?';':',';
+ const rows=[];let row=[],field='',quoted=false;
+ for(let i=0;i<text.length;i++){const c=text[i];if(c==='"'){if(quoted&&text[i+1]==='"'){field+='"';i++}else quoted=!quoted;}else if(c===delimiter&&!quoted){row.push(field);field='';}else if((c==='\r'||c==='\n')&&!quoted){if(c==='\r'&&text[i+1]==='\n')i++;row.push(field);field='';if(row.some(x=>x.trim()))rows.push(row);row=[];}else field+=c;}
+ if(quoted)throw Error('Aspas sem fechamento no CSV');row.push(field);if(row.some(x=>x.trim()))rows.push(row);return rows;
+}
+function v3ImportCSV(rows){
+ const clean=x=>String(x||'').toLocaleLowerCase('pt-BR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[ ._\-/]/g,'');
+ if(!rows.length)throw Error('Arquivo vazio');const headers=rows[0].map(clean);
+ const find=(...names)=>headers.findIndex(x=>names.includes(x));
+ const ixD=find('data','date'),ixT=find('titulo','title','publicacao'),ixV=find('visualizacoes','views','viewcount'),ixF=find('novosseguidores','seguidores','follows');
+ if([ixD,ixT,ixV,ixF].some(i=>i<0))throw Error('Colunas obrigatórias ausentes');
+ let saved=0,skipped=0;
+ for(const row of rows.slice(1)){
+  const date=(row[ixD]||'').trim(), title=(row[ixT]||'').trim();
+  const parseNumber=x=>Number(String(x??'0').trim().replace(/\s/g,'').replace(/\.(?=\d{3}(\D|$))/g,'').replace(',','.'));
+  const views=parseNumber(row[ixV]),follows=parseNumber(row[ixF]);
+  if(!title||!/^\d{4}-\d{2}-\d{2}$/.test(date)||![views,follows].every(x=>Number.isFinite(x)&&x>=0)){skipped++;continue;}
+  const existing=state.metrics.find(x=>x.date===date&&x.title.toLocaleLowerCase('pt-BR')===title.toLocaleLowerCase('pt-BR'));
+  if(existing&& !String(existing.id).startsWith('initial-')){existing.views=views;existing.follows=follows;existing.source='CSV importado'}
+  else if(!existing)state.metrics.push({id:'csv-'+Date.now()+'-'+saved,date,title:title.slice(0,120),views,follows,source:'CSV importado'});
+  else{skipped++;continue;}
+  saved++;
+ }
+ save();render();qs('#v3-csv-hint').textContent=saved+' registros novos ou atualizados; '+skipped+' ignorados. Os seis registros históricos do painel foram preservados.';
+}
+// Controladores V3. Guardar alterações só ao terminar a edição evita repintar o formulário a cada letra.
+document.addEventListener('click',e=>{
+ const btn=e.target.closest('[data-v3]');const p=current();
+ if(btn){const op=btn.dataset.v3;
+  if(op==='prev-slide'||op==='next-slide'){v3PreviewIndex+=(op==='next-slide'?1:-1);v3RenderPreview();}
+  if(op==='copy-current'&&p)copy(p.slides[v3PreviewIndex]);
+  if(op==='open-art'&&p){const url=sourceLink(getArt(p.artIds[v3PreviewIndex]));window.open(url,'_blank','noopener');}
+  if(op==='duplicate-project'&&p){const clone=JSON.parse(JSON.stringify(p));clone.id='post-'+Date.now();clone.title=p.title+' (cópia)';clone.created=now();clone.status='draft';state.projects.unshift(clone);state.current=clone.id;save();render();toast('Projeto duplicado como rascunho.');}
+  if(op==='delete-project'&&p&&confirm('Excluir este projeto do histórico local? Isso não afeta redes sociais.')){state.projects=state.projects.filter(x=>x.id!==p.id);state.current=state.projects[0]?.id||null;save();render();toast('Projeto excluído.');}
+  if(op==='add-plan'){state.plan.push({id:'plan-'+Date.now(),date:v3LocalDate(new Date()),title:'Nova pauta filosófica',format:'Carrossel',goal:'Seguidores',status:'planned'});save();v3RenderPlan();}
+  if(op==='export-plan')v3ExportPlan(); if(op==='export-ics')v3ExportICS();
+  if(op==='reset-plan'&&confirm('Restaurar as sete sugestões de pauta? Suas alterações atuais no plano serão substituídas.')){state.plan=v3SeedPlan();save();v3RenderPlan();}
+  if(op==='copy-all-prompts'&&p)copy(reelScenes().map((s,i)=>'CENA '+(i+1)+'\n'+v3BuildPrompt(i,s,p)).join('\n\n'));
+  if(op==='speak-preview'&&p){if('speechSynthesis' in window){window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(reelScenes().map(x=>x.speech).join(' '));u.lang='pt-BR';u.rate=.92;window.speechSynthesis.speak(u);}else toast('Seu navegador não oferece leitura em voz alta.');}
+  if(op==='stop-preview'&&'speechSynthesis' in window)window.speechSynthesis.cancel();
+ }
+ const variant=e.target.closest('[data-v3-use-variant]');if(variant&&p){p.slides[0]=v3MakeVariants(p)[Number(variant.dataset.v3UseVariant)];save();renderGenerator();v3RenderVariants();v3RenderPreview();toast('Título aplicado à capa.');}
+ const variantCopy=e.target.closest('[data-v3-copy-variant]');if(variantCopy&&p)copy(v3MakeVariants(p)[Number(variantCopy.dataset.v3CopyVariant)]);
+ const cp=e.target.closest('[data-v3-copy-prompt]');if(cp&&p){const i=Number(cp.dataset.v3CopyPrompt);copy(v3BuildPrompt(i,reelScenes()[i],p));}
+ const id=e.target.closest('[data-v3-plan-use]')?.dataset.v3PlanUse;
+ if(id){const x=v3GetPlan(id);if(x){if(x.format==='Análise'){setPage('metrics');toast('Abra os dados para comparar resultados.');}else{qs('#v2-topic').value=x.topic||x.title;setPage('generate');toast('Assunto levado ao editor. Crie e personalize o roteiro.');}}}
+ const c=e.target.closest('[data-v3-plan-copy]')?.dataset.v3PlanCopy;
+ if(c){const x=v3GetPlan(c);if(x)copy(x.date+' · '+x.title+' · '+x.format+' · '+x.status);}
+ const del=e.target.closest('[data-v3-plan-delete]')?.dataset.v3PlanDelete;
+ if(del&&confirm('Excluir esta pauta?')){state.plan=state.plan.filter(x=>x.id!==del);save();v3RenderPlan();}
+});
+document.addEventListener('change',e=>{
+ if(e.target.matches('[data-v3-plan]')){const id=e.target.closest('[data-v3-slot]')?.dataset.v3Slot;const x=v3GetPlan(id);if(x){x[e.target.dataset.v3Plan]=e.target.value;save();v3RenderPlan();}}
+ if(e.target.id==='v3-post-a'||e.target.id==='v3-post-b')v3Compare();
+});
+document.addEventListener('input',e=>{if(e.target.matches('[data-slide]')){v3RenderPreview();v3RenderVariants();}});
+qs('#v3-csv-input').addEventListener('change',async e=>{
+ const file=e.target.files?.[0]; if(!file)return;
+ try{if(file.size>1000000)throw Error('Arquivo CSV maior que 1 MB');v3ImportCSV(v3ParseCSV(await file.text()));toast('CSV processado.');}catch(err){qs('#v3-csv-hint').textContent='Erro: '+err.message;toast('Não foi possível importar o CSV.');} finally{e.target.value='';}
+});
+// Evitar perder a prévia e os dados do planejador após trocar de aba ou restaurar backups.
 render();
+/* STUDIO_V4_START — recursos funcionais, no proprio navegador, sem chaves ou backend */
+const v4Build='4.0';
+const v4MediaStore='entre_ideias_media_v4';
+const v4Cache=new Map();
+const v4Urls=new Map();
+let v4SlideIndex=0;
+let v4LastResults=[];
+let v4SearchBusy=false;
+const v4Msg = s => {const el=qs('#v4-feedback'); if(el) el.textContent=s;toast(s);};
+// Preserva a versao do armazenamento V1/V2/V3; campos novos sao aditivos.
+if(!Array.isArray(state.v4MuseumArts))state.v4MuseumArts=[];
+if(!state.v4Stats||typeof state.v4Stats!=='object')state.v4Stats={};
+for(const a of state.v4MuseumArts){if(a?.id&&!art.some(x=>x.id===a.id))art.push(a);}
+
+// Obras e ideias novas curadas manualmente, nao geradas em tempo real.
+const v4NewPacks=[
+{id:'skeptic-v4',title:'5 PERGUNTAS PARA QUEM TEM CERTEZA DE TUDO',type:'Epistemologia',slides:[
+'1. Que evidência faria você admitir que mudou de ideia?',
+'2. Você conhece a melhor objeção ao que acredita?',
+'3. Seu argumento continuaria convincente sem o prestígio de quem o disse?',
+'4. Você distingue uma coincidência de uma causa?',
+'5. Se sua crença fosse falsa, como você perceberia?'],cta:'Qual dessas cinco perguntas mais desafia suas certezas?',caption:'Uma convicção não precisa ser abandonada para ser examinada. Talvez a dúvida seja o começo de uma compreensão mais profunda.\n\n#Filosofia #Epistemologia #PensamentoCritico #EntreIdeias'},
+{id:'memory-v4',title:'5 DILEMAS FILOSÓFICOS SOBRE A MEMÓRIA',type:'Identidade',slides:[
+'1. Uma lembrança imprecisa ainda faz parte de quem somos?',
+'2. Quando narramos o passado, estamos lembrando ou interpretando?',
+'3. O esquecimento pode nos dar liberdade?',
+'4. Somos responsáveis por escolhas das quais já não nos lembramos?',
+'5. Se nossas memórias mudassem, nossa identidade permaneceria?'],cta:'Qual desses dilemas você gostaria de discutir?',caption:'Memória não é apenas um arquivo do passado. É também parte de como interpretamos quem somos.\n\n#Filosofia #Memoria #Identidade #EntreIdeias'},
+{id:'language-v4',title:'5 IDEIAS SOBRE O PODER DAS PALAVRAS',type:'Linguagem',slides:[
+'1. Dar um nome a algo muda a forma como o percebemos?',
+'2. Uma palavra pode esclarecer e esconder ao mesmo tempo?',
+'3. Por que duas pessoas usam o mesmo termo para ideias diferentes?',
+'4. Podemos pensar sobre aquilo que ainda não sabemos expressar?',
+'5. Quem escolhe as palavras também influencia os limites do debate?'],cta:'Que palavra você acha que merece ser questionada?',caption:'Às vezes, uma discussão muda completamente quando começamos a perguntar o que as palavras significam.\n\n#Filosofia #Linguagem #Pensamento #EntreIdeias'},
+{id:'power-v4',title:'5 PERGUNTAS PARA COMPREENDER A AUTORIDADE',type:'Filosofia política',slides:[
+'1. Quando uma regra merece ser obedecida?',
+'2. O que diferencia autoridade legítima de imposição?',
+'3. Uma decisão popular é sempre justa?',
+'4. O poder pode existir sem responsabilidade?',
+'5. Que limites deveriam valer até para quem concordamos?'],cta:'Qual limite do poder você considera indispensável?',caption:'Entender o poder exige ir além de quem o exerce: precisamos discutir suas justificativas e seus limites.\n\n#FilosofiaPolitica #Poder #Etica #EntreIdeias'},
+{id:'certainty-v4',title:'5 ERROS AO CONFUNDIR OPINIÃO COM CONHECIMENTO',type:'Conhecimento',slides:[
+'1. Repetir uma frase muitas vezes não a torna verdadeira.',
+'2. Uma experiência pessoal não descreve necessariamente todos os casos.',
+'3. O prestígio de quem afirma algo não substitui evidências.',
+'4. Não encontrar uma explicação não prova a primeira que aparece.',
+'5. Discordância não é, por si só, sinal de ignorância.'],cta:'Qual desses erros você mais encontra em discussões?',caption:'Aprender a pensar exige reconhecer os limites entre aquilo que sabemos e aquilo que apenas supomos.\n\n#Filosofia #Raciocinio #Conhecimento #EntreIdeias'},
+{id:'responsibility-v4',title:'5 QUESTÕES SOBRE RESPONSABILIDADE QUE NÃO SÃO SIMPLES',type:'Ética',slides:[
+'1. Somos responsáveis por consequências que não poderíamos prever?',
+'2. Uma boa intenção diminui a gravidade de um erro?',
+'3. Até onde vai nossa obrigação de ajudar desconhecidos?',
+'4. Existe responsabilidade quando não há liberdade de escolha?',
+'5. Pedir desculpas sempre basta para reparar um dano?'],cta:'Qual pergunta merece uma conversa mais longa?',caption:'A responsabilidade parece evidente até enfrentarmos situações em que intenções, escolhas e consequências entram em conflito.\n\n#Etica #Filosofia #Responsabilidade #EntreIdeias'},
+{id:'truth-v4',title:'5 DISTINÇÕES QUE MUDAM UMA DISCUSSÃO',type:'Argumentação',slides:[
+'1. Fato e interpretação não são a mesma coisa.',
+'2. Compreender uma ideia não obriga você a concordar com ela.',
+'3. Uma explicação possível não é necessariamente a mais provável.',
+'4. Discordar de alguém não significa negar sua dignidade.',
+'5. Mudar de opinião não é sempre uma derrota.'],cta:'Qual dessas distinções tornaria nossas conversas melhores?',caption:'Pensar melhor também depende de distinguir aquilo que costuma aparecer misturado em debates.\n\n#Filosofia #Dialogo #PensamentoCritico #EntreIdeias'},
+{id:'time-v4',title:'5 PARADOXOS SOBRE O TEMPO E A EXISTÊNCIA',type:'Tempo',slides:[
+'1. O presente desaparece no instante em que tentamos apontá-lo.',
+'2. O futuro influencia escolhas antes de existir para nós.',
+'3. Uma lembrança distante pode parecer mais viva que ontem.',
+'4. Medimos o tempo igualmente, mas não o sentimos da mesma forma.',
+'5. A ideia de uma vida infinita mudaria o valor das nossas decisões?'],cta:'Qual dessas ideias muda a maneira como você vive o presente?',caption:'O tempo pode ser contado, mas nem por isso deixa de produzir questões filosóficas difíceis.\n\n#Tempo #Filosofia #Existencia #EntreIdeias'}
+];
+for(const p of v4NewPacks)if(!packs.some(x=>x.id===p.id))packs.push(p);
+
+const v4FullPage=document.createElement('section');v4FullPage.id='page-atelier';v4FullPage.className='page';
+v4FullPage.innerHTML=`
+ <div class="page-intro"><div><div class="eyebrow">ATELIÊ VISUAL · 5.0</div><h1>Pinturas reais, conteúdo pronto</h1><p>Associe imagens históricas aos slides e exporte PNG limpo ou com o texto. As imagens não são geradas artificialmente.</p></div></div>
+ <section class="v4-panel"><span class="v4-kicker">PASSO A PASSO</span><div class="v4-steps">
+  <div class="v4-step"><b>01</b><strong>Crie o roteiro</strong><small>Use a aba Criar ou uma pauta da biblioteca.</small></div>
+  <div class="v4-step"><b>02</b><strong>Encontre a pintura</strong><small>Pesquise obras públicas ou escolha um arquivo do celular.</small></div>
+  <div class="v4-step"><b>03</b><strong>Ajuste a imagem</strong><small>Enquadre, confira a prévia e mantenha o texto separado.</small></div>
+  <div class="v4-step"><b>04</b><strong>Exporte o material</strong><small>Baixe PNGs limpos, PNGs com texto e o roteiro.</small></div>
+ </div></section>
+ <div class="v4-grid">
+ <section class="v4-panel">
+  <span class="v4-kicker">PROJETO ATUAL</span><h2 id="v4-project-name">Escolha um projeto</h2>
+  <div class="v4-field"><label for="v4-slide">SLIDE PARA TRABALHAR</label><select class="v4-select" id="v4-slide"></select></div>
+  <div class="v4-visual-tip">O texto é independente da pintura. O PNG <strong>limpo</strong> mantém somente a imagem; o PNG <strong>com texto</strong> serve como opção pronta de post.</div>
+  <div class="v4-actions"><label class="v4-file" style="width:100%">✦ Importar pintura do iPhone<input type="file" id="v4-img-input" accept="image/png,image/jpeg,image/webp,image/heic,image/heif" hidden></label></div>
+  <div class="v4-field"><label for="v4-crop">ENQUADRAMENTO HORIZONTAL <span id="v4-crop-label">50%</span></label><input type="range" id="v4-crop" min="0" max="100" step="5" value="50"></div>
+  <div class="v4-actions"><button type="button" class="primary sm" data-v4="export-text-png">Baixar PNG com texto</button><button type="button" class="secondary sm" data-v4="export-clean-png">Baixar PNG limpo</button><button type="button" class="ghost sm" data-v4="delete-photo">Remover foto</button></div>
+  <div class="v4-actions"><button type="button" class="ghost" data-v4="export-zip">↓ Exportar todos os slides em ZIP</button></div>
+  <p class="v4-muted" id="v4-upload-count">Nenhuma imagem importada ainda.</p>
+ </section>
+ <section class="v4-panel">
+  <span class="v4-kicker">PRÉVIA DO ARQUIVO · 9:16</span><h2>Como ficará no Instagram</h2>
+  <div class="v4-preview-stage" id="v4-photo-stage"><img id="v4-photo" alt="Pintura selecionada"><div class="v4-photo-shade"></div><span class="v4-photo-count" id="v4-photo-count">01 / 07</span><div class="v4-photo-text" id="v4-photo-text">Selecione uma imagem e um projeto</div><span class="v4-photo-brand">ENTRE IDEIAS · QUESTIONE TUDO</span></div>
+  <div class="v4-actions" style="justify-content:center"><button class="ghost sm" data-v4="prev-photo">← Anterior</button><button class="ghost sm" data-v4="next-photo">Próximo →</button></div>
+  <p class="v4-muted" id="v4-image-info">A prévia usa apenas imagens importadas ou obtidas do acervo consultado.</p>
+ </section>
+ </div>
+ <section class="v4-panel">
+  <span class="v4-kicker">MUSEU · ACERVO PÚBLICO</span><h2>Buscar pinturas históricas reais</h2>
+  <p class="v4-muted">Pesquisa no Art Institute of Chicago. Só aparecem resultados com <strong>domínio público informado pela instituição</strong>. A consulta depende da internet; verifique a ficha da obra antes de publicar.</p>
+  <div class="v4-aic-search"><input class="v4-input" id="v4-art-query" placeholder="Ex.: philosopher, stoic, portrait, ancient Greece" aria-label="Buscar obras no museu"><button class="primary" data-v4="search-art">Pesquisar pinturas</button></div>
+  <div class="v4-art-results" id="v4-art-results"></div><p class="v4-muted" id="v4-art-status">Sugestão: pesquise em inglês para encontrar mais registros.</p>
+  <p class="v4-muted"><a href="https://www.artic.edu/open-access/open-access-images" target="_blank" rel="noopener noreferrer">Política Open Access do museu ↗</a> · <a href="https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=renaissance%20philosophy%20painting" target="_blank" rel="noopener noreferrer">Busca complementar no Wikimedia ↗</a></p>
+ </section>`;
+qs('main').append(v4FullPage);
+for(const target of [qs('.sidebar .menu'),qs('.mobile-nav')]){
+ if(!target)continue;const b=document.createElement('button');b.type='button';b.dataset.nav='atelier';
+ if(target.classList.contains('menu')){b.className='menu-item';b.innerHTML='<span>◈</span> Ateliê visual';}else b.innerHTML='<span>◈</span>Ateliê';target.append(b);
+}
+const v4Overview=document.createElement('section');v4Overview.className='v4-panel';v4Overview.innerHTML=`
+ <span class="v4-kicker">STUDIO 4.0 · PROJETO EDITORIAL</span><h2>Produção e próximas oportunidades</h2>
+ <div id="v4-pipeline" class="v4-grid3"></div>
+ <div class="v4-grid" style="margin-top:13px"><div><h3>Biblioteca de pautas</h3><p class="v4-muted">Temas pré-roteirizados que seguem a estética do perfil, priorizando a variedade.</p><div id="v4-ideas"></div></div><div><h3>Pedido para uma IA roteirista</h3><p class="v4-muted">Para gerar um roteiro realmente novo, copie o briefing contextualizado e envie aqui no ChatGPT. Este painel não contém uma API paga oculta.</p><button class="primary" data-v4="copy-brief">Copiar briefing inteligente</button><p class="v4-local-privacy">Sem compartilhamento automático do seu conteúdo com modelos externos.</p></div></div>`;
+qs('#page-home .kpis')?.after(v4Overview);
+const v4Production=document.createElement('section');v4Production.className='v4-panel';v4Production.innerHTML=`<span class="v4-kicker">CONTROLE DE QUALIDADE</span><h2>Auditoria do roteiro atual</h2><div id="v4-review"></div><div class="v4-actions"><button class="primary sm" data-nav="atelier">Abrir Ateliê Visual</button><button class="ghost sm" data-v4="copy-brief">Criar novo briefing para IA</button></div>`;
+qs('#page-generate .editor-layout')?.after(v4Production);
+const v4Narration=document.createElement('section');v4Narration.className='v4-panel';v4Narration.innerHTML=`<span class="v4-kicker">NARRAÇÃO E LEGENDAS</span><h2>Texto de voz do Reels</h2><p class="v4-muted">Rascunho editável para usar sua voz ou um narrador externo. Os tempos das legendas são uma divisão aproximada em seis cenas de cinco segundos.</p><textarea class="v4-textarea" id="v4-voiceover" placeholder="Crie um carrossel para adaptar a narração."></textarea><div class="v4-actions"><button class="secondary sm" data-v4="fill-voice">Usar texto dos slides</button><button class="ghost sm" data-v4="copy-voice">Copiar narração</button><button class="ghost sm" data-v4="export-srt">Baixar legendas SRT</button></div><p class="v4-muted" id="v4-voice-meter"></p>`;
+qs('#page-reels .v3-panel:last-of-type')?.after(v4Narration);
+const v4Privacy=document.createElement('section');v4Privacy.className='v4-panel';v4Privacy.innerHTML=`<span class="v4-kicker">SEUS ARQUIVOS</span><h2>Backup completo (incluindo pinturas)</h2><p class="v4-muted">Os backups antigos do Studio incluem roteiros e dados, mas não incluem imagens importadas. Este backup completo armazena também as pinturas já anexadas em formato JPEG dentro do arquivo JSON. O arquivo pode ficar grande.</p><div class="v4-actions"><button class="primary sm" data-v4="full-backup">Baixar backup completo</button><label class="secondary file-btn">Restaurar backup completo<input type="file" id="v4-backup-input" accept=".json,application/json" hidden></label></div><p id="v4-backup-status" class="v4-muted">Os arquivos de imagem ficam guardados localmente neste navegador. Não são enviados ao GitHub.</p>`;
+qs('#page-metrics')?.append(v4Privacy);
+const v4Img=document.createElement('img');v4Img.id='v4-preview-image';v4Img.alt='Prévia da pintura importada';v4Img.loading='lazy';qs('.v3-preview')?.prepend(v4Img);
+
+function v4Key(projectId,index){return String(projectId)+'::'+String(index)}
+function v4OpenDB(){return new Promise((res,rej)=>{
+ if(!('indexedDB' in window)){rej(Error('IndexedDB indisponível'));return;}
+ const req=indexedDB.open(v4MediaStore,1);
+ req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains('photos'))req.result.createObjectStore('photos');};
+ req.onsuccess=()=>res(req.result);req.onerror=()=>rej(req.error||Error('Falha ao abrir armazenamento'));
+});}
+async function v4Db(kind,key,blob){
+ try{const db=await v4OpenDB();return await new Promise((res,rej)=>{const tx=db.transaction('photos',kind==='get'?'readonly':'readwrite');const st=tx.objectStore('photos');const req=kind==='get'?st.get(key):kind==='put'?st.put(blob,key):st.delete(key);
+  req.onsuccess=()=>res(req.result);req.onerror=()=>rej(req.error||Error('Falha no banco'));tx.oncomplete=()=>db.close();tx.onabort=()=>{db.close();rej(tx.error||Error('Transação cancelada'))};});}
+ catch(e){if(kind==='put'){v4Cache.set(key,blob);return true;}if(kind==='delete'){v4Cache.delete(key);return true;}return v4Cache.get(key)||null;}
+}
+async function v4GetPhoto(key){return await v4Db('get',key)||v4Cache.get(key)||null}
+function v4ProjectIndex(){return Math.max(0,Math.min((current()?.slides.length||1)-1,v4SlideIndex))}
+function v4CropValue(p,idx){return Number(p?.v4Crops?.[idx]??50)}
+function v4UpdateArtRef(p){return getArt(p?.artIds?.[v4ProjectIndex()]);}
+async function v4ReadImage(blob){const obj=URL.createObjectURL(blob);return await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>{URL.revokeObjectURL(obj);resolve(img)};img.onerror=()=>{URL.revokeObjectURL(obj);reject(Error('Imagem inválida ou não suportada'))};img.src=obj;});}
+async function v4Compress(blob){
+ const img=await v4ReadImage(blob);const max=2200;const ratio=Math.min(1,max/Math.max(img.naturalWidth,img.naturalHeight));
+ const c=document.createElement('canvas');c.width=Math.max(1,Math.floor(img.naturalWidth*ratio));c.height=Math.max(1,Math.floor(img.naturalHeight*ratio));
+ const ctx=c.getContext('2d');ctx.drawImage(img,0,0,c.width,c.height);
+ return await new Promise((resolve,reject)=>c.toBlob(b=>b?resolve(b):reject(Error('Falha ao preparar JPEG')),'image/jpeg',.87));
+}
+async function v4SetPhoto(projectId,idx,blob){const compressed=await v4Compress(blob);await v4Db('put',v4Key(projectId,idx),compressed);return compressed.size;}
+async function v4DisplayPhoto(){
+ const p=current(),idx=v4ProjectIndex(),img=qs('#v4-photo'),stage=qs('#v4-photo-stage'),mainImg=qs('#v4-preview-image'),mainStage=qs('.v3-preview');
+ if(!stage||!img)return;
+ const n=String(idx+1).padStart(2,'0');qs('#v4-photo-count').textContent=n+' / '+String(p?.slides.length||7).padStart(2,'0');
+ qs('#v4-photo-text').textContent=p?.slides?.[idx]||'Crie um projeto para começar';
+ const pName=qs('#v4-project-name');pName.textContent=p?.title||'Crie um roteiro na aba Criar';
+ qs('#v4-crop').value=String(v4CropValue(p,idx));qs('#v4-crop-label').textContent=String(v4CropValue(p,idx))+'%';
+ if(!p){stage.classList.remove('is-loaded');mainStage?.classList.remove('v4-has-image');img.removeAttribute('src');mainImg?.removeAttribute('src');return;}
+ const key=v4Key(p.id,idx),blob=await v4GetPhoto(key);
+ if(v4ProjectIndex()!==idx||current()?.id!==p.id)return;
+ const old=v4Urls.get('preview');if(old){URL.revokeObjectURL(old);v4Urls.delete('preview');}
+ if(blob){const url=URL.createObjectURL(blob);v4Urls.set('preview',url);img.src=url;if(mainImg)mainImg.src=url;stage.classList.add('is-loaded');mainStage?.classList.add('v4-has-image');
+  const position=v4CropValue(p,idx)+'% 50%';img.style.objectPosition=position;if(mainImg)mainImg.style.objectPosition=position;
+  qs('#v4-image-info').textContent='Imagem anexada ao slide '+(idx+1)+' · salva neste navegador.';
+ }else{stage.classList.remove('is-loaded');mainStage?.classList.remove('v4-has-image');img.removeAttribute('src');mainImg?.removeAttribute('src');qs('#v4-image-info').textContent='Sem imagem neste slide. Importe uma pintura real ou selecione uma obra pública do museu.';}
+}
+function v4RefreshSelect(){const p=current(),sel=qs('#v4-slide');if(!sel)return;
+ if(!p){sel.innerHTML='<option>Crie um roteiro primeiro</option>';return;}
+ const old=sel.value;sel.innerHTML=p.slides.map((s,i)=>'<option value="'+i+'">'+String(i+1).padStart(2,'0')+' — '+safe(s.slice(0,70))+'</option>').join('');
+ v4SlideIndex=Math.max(0,Math.min(v4SlideIndex,p.slides.length-1));sel.value=String(v4SlideIndex);
+}
+async function v4UpdateFileCount(){const p=current();if(!p)return;let count=0;
+ for(let i=0;i<p.slides.length;i++)if(await v4GetPhoto(v4Key(p.id,i)))count++;
+ if(current()?.id===p.id)qs('#v4-upload-count').textContent=count+' de '+p.slides.length+' pinturas anexadas ao projeto. As imagens são salvas neste navegador; use o backup completo para preservá-las.';
+}
+function v4ClampText(text){return String(text||'').trim().replace(/\s+/g,' ')}
+function v4Wrap(ctx,t,maxWidth){const words=v4ClampText(t).split(' '),lines=[];let currentLine='';for(const w of words){const tryLine=currentLine?currentLine+' '+w:w;if(ctx.measureText(tryLine).width>maxWidth&&currentLine){lines.push(currentLine);currentLine=w;}else currentLine=tryLine;}if(currentLine)lines.push(currentLine);return lines;}
+function v4Cover(ctx,img,x,y,w,h,pct){const scale=Math.max(w/img.naturalWidth,h/img.naturalHeight),iw=img.naturalWidth*scale,ih=img.naturalHeight*scale;const dx=x-(iw-w)*pct/100,dy=y-(ih-h)/2;ctx.drawImage(img,dx,dy,iw,ih);}
+async function v4Canvas(p,idx,withText){const blob=await v4GetPhoto(v4Key(p.id,idx));if(!blob)throw Error('O slide '+(idx+1)+' não tem pintura importada.');const img=await v4ReadImage(blob);
+ const c=document.createElement('canvas');c.width=1080;c.height=1920;const ctx=c.getContext('2d');
+ v4Cover(ctx,img,0,0,c.width,c.height,v4CropValue(p,idx));
+ if(withText){let shade=ctx.createLinearGradient(0,0,0,1920);shade.addColorStop(0,'rgba(9,17,12,.58)');shade.addColorStop(.35,'rgba(10,19,13,.16)');shade.addColorStop(.74,'rgba(8,17,12,.47)');shade.addColorStop(1,'rgba(4,10,7,.72)');ctx.fillStyle=shade;ctx.fillRect(0,0,1080,1920);
+ ctx.textAlign='center';ctx.fillStyle='#f8f2e6';let size=76,lines=[];
+ const text=String(p.slides[idx]||'');while(size>=40){ctx.font='600 '+size+'px Georgia,serif';lines=v4Wrap(ctx,text,880);if(lines.length<=8&&lines.every(t=>ctx.measureText(t).width<=880))break;size-=4;}
+ const step=size*1.28;const blockHeight=lines.length*step;let y=(1920-blockHeight)/2+size*.4;
+ ctx.shadowColor='rgba(0,0,0,.88)';ctx.shadowBlur=21;ctx.shadowOffsetY=5;
+ lines.forEach(t=>{ctx.fillText(t,540,y);y+=step});ctx.shadowBlur=0;ctx.shadowOffsetY=0;
+ ctx.font='700 22px Arial,sans-serif';ctx.letterSpacing='5px';ctx.fillStyle='#d7c6a4';ctx.fillText('ENTRE IDEIAS · QUESTIONE TUDO',540,1810);ctx.letterSpacing='0px';ctx.font='500 22px Arial,sans-serif';ctx.fillText(String(idx+1).padStart(2,'0')+' / '+String(p.slides.length).padStart(2,'0'),540,100);
+ }
+ return await new Promise((res,rej)=>c.toBlob(b=>b?res(b):rej(Error('Não foi possível renderizar PNG')),'image/png'));
+}
+function v4DownloadBlob(name,blob){const a=document.createElement('a');const url=URL.createObjectURL(blob);a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}
+async function v4ExportOne(withText){const p=current();if(!p){v4Msg('Crie um roteiro primeiro.');return;}
+ try{const idx=v4ProjectIndex();const blob=await v4Canvas(p,idx,withText);v4DownloadBlob('entre-ideias-slide-'+String(idx+1).padStart(2,'0')+(withText?'-com-texto':'-limpo')+'.png',blob);v4Msg('PNG '+(withText?'com texto':'limpo')+' preparado para baixar.');}catch(e){v4Msg(e.message);}
+}
+// ZIP sem bibliotecas externas: arquivos PNG ja sao comprimidos, portanto ZIP store.
+const v4ZipCRC=(()=>{let tab=[];for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=(c&1)?0xedb88320^(c>>>1):c>>>1;tab[n]=c>>>0;}return bytes=>{let c=0xffffffff;for(const n of bytes)c=tab[(c^n)&255]^(c>>>8);return (c^0xffffffff)>>>0;};})();
+function v4Zip(files){const encoder=new TextEncoder(),parts=[],central=[];let offset=0;for(const f of files){const name=encoder.encode(f.name),data=f.bytes,crc=v4ZipCRC(data),head=new Uint8Array(30+name.length),h=new DataView(head.buffer);
+ h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,2048,true);h.setUint16(8,0,true);h.setUint32(14,crc,true);h.setUint32(18,data.length,true);h.setUint32(22,data.length,true);h.setUint16(26,name.length,true);head.set(name,30);parts.push(head,data);
+ const cd=new Uint8Array(46+name.length),c=new DataView(cd.buffer);c.setUint32(0,0x02014b50,true);c.setUint16(4,20,true);c.setUint16(6,20,true);c.setUint16(8,2048,true);c.setUint16(10,0,true);c.setUint32(16,crc,true);c.setUint32(20,data.length,true);c.setUint32(24,data.length,true);c.setUint16(28,name.length,true);c.setUint32(42,offset,true);cd.set(name,46);central.push(cd);offset+=head.length+data.length;
+ }let cLen=central.reduce((x,b)=>x+b.length,0);let end=new Uint8Array(22),e=new DataView(end.buffer);e.setUint32(0,0x06054b50,true);e.setUint16(8,files.length,true);e.setUint16(10,files.length,true);e.setUint32(12,cLen,true);e.setUint32(16,offset,true);return new Blob([...parts,...central,end],{type:'application/zip'});
+}
+function v4RoteiroTxt(p){return 'ENTRE IDEIAS — '+p.title+'\nData: '+p.created+'\n\n'+p.slides.map((t,i)=>'SLIDE '+(i+1)+'\nTEXTO: '+t+'\nOBRA: '+(getArt(p.artIds[i])?.name||'a escolher')+'\nFONTE: '+(getArt(p.artIds[i])?.source||'conferir')+'\n').join('\n')+'\nLEGENDA\n'+(p.caption||'')+'\n';}
+async function v4ExportZip(){const p=current();if(!p){v4Msg('Crie um roteiro primeiro.');return;}const btn=qs('[data-v4="export-zip"]');btn.disabled=true;const normal=btn.textContent;const files=[];let missing=[];
+ try{for(let i=0;i<p.slides.length;i++){
+  if(!await v4GetPhoto(v4Key(p.id,i))){missing.push(i+1);continue;}
+  btn.textContent='Preparando slide '+(i+1)+' de '+p.slides.length+'…';const n=String(i+1).padStart(2,'0');
+  for(const t of [false,true]){const blob=await v4Canvas(p,i,t);files.push({name:'slides/slide-'+n+(t?'-com-texto':'-limpo')+'.png',bytes:new Uint8Array(await blob.arrayBuffer())});}
+ }
+ files.push({name:'roteiro.txt',bytes:new TextEncoder().encode(v4RoteiroTxt(p))});
+ files.push({name:'LEIA-ME.txt',bytes:new TextEncoder().encode('Entre Ideias Studio 4.0\nOs PNG limpos nao incluem textos. Os outros PNG incluem o texto atual.\nImagens nao carregadas dos slides: '+(missing.join(', ')||'nenhuma')+'\nConfira autoria e licencas antes de publicar.\n')});
+ v4DownloadBlob('entre-ideias-carrossel-'+p.created+'.zip',v4Zip(files));v4Msg('Pacote gerado: '+files.length+' arquivos. '+(missing.length?'Faltaram imagens dos slides '+missing.join(', ')+'.':'Todas as imagens foram incluídas.'));
+ }catch(e){v4Msg('Falha ao exportar: '+e.message);}finally{btn.textContent=normal;btn.disabled=false;}
+}
+async function v4MuseumSearch(){if(v4SearchBusy)return;const query=qs('#v4-art-query').value.trim();if(query.length<2){v4Msg('Digite uma palavra para pesquisar pinturas.');return;}
+ v4SearchBusy=true;qs('#v4-art-status').textContent='Pesquisando obras com domínio público indicado pelo museu…';qs('#v4-art-results').innerHTML='';
+ try{const url='https://api.artic.edu/api/v1/artworks/search?q='+encodeURIComponent(query)+'&limit=24&fields=id,title,artist_display,date_display,image_id,is_public_domain';const res=await fetch(url);if(!res.ok)throw Error('O museu retornou '+res.status);
+ const data=await res.json();v4LastResults=(data.data||[]).filter(a=>a.is_public_domain===true&&a.image_id&&/^[a-z0-9-]+$/i.test(a.image_id)).slice(0,12);
+ qs('#v4-art-results').innerHTML=v4LastResults.map((a,i)=>'<article class="v4-art-result"><img loading="lazy" alt="Pintura do acervo do Art Institute of Chicago" src="https://www.artic.edu/iiif/2/'+a.image_id+'/full/400,/0/default.jpg"><strong>'+safe(a.title)+'</strong><p>'+safe((a.artist_display||'Autor não informado').slice(0,85))+'</p><div class="v4-actions"><button class="secondary sm" data-v4-art-pick="'+i+'">Usar no slide</button></div><a target="_blank" rel="noopener noreferrer" href="https://www.artic.edu/artworks/'+encodeURIComponent(a.id)+'">Ficha da obra ↗</a></article>').join('');
+ qs('#v4-art-status').textContent=v4LastResults.length? v4LastResults.length+' resultados com imagem e indicação de domínio público. Selecione uma obra para vinculá-la ao slide atual.':'Nenhuma obra com imagem pública encontrada. Tente outra busca em inglês.';
+ }catch(e){qs('#v4-art-status').textContent='Pesquisa temporariamente indisponível: '+e.message+'. Use o link do museu ou importe uma imagem salva no celular.';}
+ finally{v4SearchBusy=false;}
+}
+async function v4UseMuseumArt(i){const p=current(),a=v4LastResults[i];if(!p){v4Msg('Primeiro crie um roteiro.');return;}if(!a||a.is_public_domain!==true)return;
+ const idx=v4ProjectIndex(),artId='aic-'+a.id;
+ const meta={id:artId,name:a.title,author:(a.artist_display||'Acervo Art Institute of Chicago').slice(0,200),used:false,source:'https://www.artic.edu/artworks/'+a.id,search:a.title+' '+(a.artist_display||'')};
+ if(!state.v4MuseumArts.some(x=>x.id===artId)){state.v4MuseumArts.push(meta);art.push(meta);}p.artIds[idx]=artId;save();render();
+ qs('#v4-art-status').textContent='Obra vinculada. Importando uma versão de alta resolução para este slide…';
+ const imageUrl='https://www.artic.edu/iiif/2/'+a.image_id+'/full/1686,/0/default.jpg';
+ try{const res=await fetch(imageUrl);if(!res.ok)throw Error('Imagem não disponível');await v4SetPhoto(p.id,idx,await res.blob());await v4DisplayPhoto();await v4UpdateFileCount();qs('#v4-art-status').textContent='Obra importada e salva neste navegador. Fonte: '+meta.author+'.';v4Msg('Pintura pública vinculada e importada!');}
+ catch(e){qs('#v4-art-status').innerHTML='Obra vinculada, mas o navegador bloqueou o download automático. <a href="'+imageUrl+'" target="_blank" rel="noopener noreferrer">Abra a imagem do museu ↗</a>, salve em Arquivos e importe no Ateliê.';}
+}
+function v4EditorialCheck(p){if(!p)return '<p class="v4-muted">Abra ou crie um roteiro para iniciar a revisão.</p>';
+ const alerts=[];const clean=t=>String(t||'').toLocaleLowerCase('pt-BR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+ const sl=p.slides||[];const long=sl.map((s,i)=>({n:i+1,len:String(s).length})).filter(x=>x.len>150);if(long.length)alerts.push('Textos extensos: slides '+long.map(x=>x.n).join(', ')+'.');
+ const ids=p.artIds||[];if(new Set(ids).size<ids.length)alerts.push('Há obras repetidas dentro do carrossel.');
+ if(state.projects.some(x=>x.id!==p.id&&clean(x.title)===clean(p.title)))alerts.push('Este título já aparece em outro projeto.');
+ const historic=['5 habilidades que vao te aproximar do seu objetivo','5 homens que voce deveria estudar','5 paradoxos filosoficos'];if(historic.some(x=>clean(p.title).includes(x)))alerts.push('Tema próximo de uma série já utilizada. Confirme se há conteúdo realmente novo.');
+ const hashtags=(p.caption||'').match(/#[\p{L}\p{N}_]+/gu)||[];if(hashtags.length>4)alerts.push('Há mais de quatro hashtags na legenda.');
+ if(!p.caption?.trim())alerts.push('Legenda vazia.');
+ const text=sl.join(' ').toLowerCase();if(/“[^”]{6,}”\s*—\s*\w/.test(text))alerts.push('Citação aparente: verifique a autoria antes de publicar.');
+ let score=Math.max(15,100-alerts.length*16),bar='<div class="v4-score"><div class="v4-score-fill" style="width:'+score+'%"></div></div>';
+ return '<p class="v4-muted"><strong>'+alerts.length+' alertas de edição</strong> · pontuação de preparação local '+score+'/100 (não é previsão do algoritmo).</p>'+bar+
+ (alerts.length?'<ul class="v4-muted">'+alerts.map(a=>'<li>'+safe(a)+'</li>').join('')+'</ul>':'<p class="v4-muted">Nenhum alerta automático. Ainda é preciso verificar informações, fontes, licenças e contexto.</p>');
+}
+function v4RenderIdeas(){const used=new Set(state.projects.map(p=>p.themeId));const suggestions=v4NewPacks.filter(x=>!used.has(x.id)).slice(0,5).concat(v4NewPacks.filter(x=>used.has(x.id)).slice(0,1));
+ qs('#v4-ideas').innerHTML=suggestions.map(p=>'<div class="v4-idea"><div><strong>'+safe(p.title)+'</strong><p>'+safe(p.type)+' · 7 slides · roteiro editável</p></div><button class="ghost sm" data-v4-idea="'+safe(p.id)+'">Criar</button></div>').join('');
+}
+function v4RenderPipeline(){const posts=state.projects||[],ready=posts.filter(p=>p.status==='ready').length,published=posts.filter(p=>p.status==='published').length,plan=(state.plan||[]).filter(p=>p.status==='planned').length;
+ const data=[['Rascunhos',posts.filter(p=>p.status==='draft').length,'roteiros locais'],['Prontos',ready,'aguardam publicação'],['Publicados',published,'registrados no Studio'],['Pautas',plan,'planejadas']];
+ const root=qs('#v4-pipeline');root.style.gridTemplateColumns='repeat(2,minmax(0,1fr))';root.innerHTML=data.map(x=>'<div class="v4-box"><small>'+x[0]+'</small><b>'+fmt(x[1])+'</b><small>'+x[2]+'</small></div>').join('');
+}
+function v4MakeBrief(){const p=current(),last=(state.projects||[]).slice(0,14).map(x=>x.title).join(' | ');
+ return `Você é o roteirista filosófico do Entre Ideias. Crie UM carrossel ORIGINAL para TikTok e Instagram em português brasileiro, com 7 slides (capa, 5 ideias e CTA).\n\nIdentidade visual: pinturas históricas reais, marfim, sépia, dourado e verde escuro. Textos sempre SEPARADOS das imagens. Nada de autoajuda genérica, citações inventadas ou afirmações universais.\n\n${p?'Tema de partida: '+p.title+'\n':'Escolha um tema original sobre conhecimento, comportamento humano ou filosofia prática.\n'}Não repita os títulos recentes: ${last||'sem histórico local'}.\n\nFormato de saída: (1) título de até 12 palavras; (2) sete textos curtos por slide, com progressão de curiosidade; (3) indicação de uma pintura real diferente por slide (obra, autor e link para fonte/arquivo com licença verificável); (4) legenda com CTA e no máximo quatro hashtags; (5) diferenciação entre fatos, interpretação e texto autoral; (6) hipótese de gancho A/B. Seja preciso e não invente fontes.\n\nObjetivo: aumentar seguidores por 1.000 visualizações mantendo qualidade filosófica.\n`;}
+function v4VoiceDefault(p){return (p?.slides||[]).map((s,i)=>String(s).replace(/^\d+\.\s*/,'')) .join(' ')}
+function v4RenderVoice(){const p=current(),el=qs('#v4-voiceover');el.value=p?p.v4Voiceover??v4VoiceDefault(p):'';el.disabled=!p;v4VoiceMeter();}
+function v4VoiceMeter(){const txt=qs('#v4-voiceover')?.value||'',words=txt.trim()?txt.trim().split(/\s+/).length:0,secs=Math.round(words/2.2);
+ qs('#v4-voice-meter').textContent=words+' palavras · duração estimada de '+secs+'s em velocidade normal. '+(secs>35?'Encurte o texto para um Reels de cerca de 30 segundos.':'Revise pausas e pronúncia antes de gravar.');}
+function v4SRT(text){const tokens=text.trim().split(/\s+/).filter(Boolean);const pieces=[];for(let i=0;i<6;i++){const a=Math.floor(i*tokens.length/6),b=Math.floor((i+1)*tokens.length/6);pieces.push(tokens.slice(a,b).join(' '));}
+ const stamp=s=>String(Math.floor(s/3600)).padStart(2,'0')+':'+String(Math.floor(s/60)%60).padStart(2,'0')+':'+String(s%60).padStart(2,'0')+',000';
+ return pieces.map((t,i)=>(i+1)+'\n'+stamp(i*5)+' --> '+stamp((i+1)*5)+'\n'+t+'\n').join('\n');}
+function v4Render(){
+ if(!Array.isArray(state.v4MuseumArts))state.v4MuseumArts=[];
+ v4RenderPipeline();v4RenderIdeas();qs('#v4-review').innerHTML=v4EditorialCheck(current());v4RefreshSelect();v4DisplayPhoto();v4UpdateFileCount();v4RenderVoice();
+}
+const v4OldRender=render;render=function(){v4OldRender();v4Render();};
+const v4OldSetPage=setPage;setPage=function(id){v4OldSetPage(id);if(id==='atelier'){qs('#section-title').textContent='Ateliê Visual';v4Render();}};
+const v4OldPreview=v3RenderPreview;v3RenderPreview=function(){v4OldPreview();v4DisplayPhoto();};
+function v4SwitchSlide(dir){const p=current();if(!p)return;v4SlideIndex=(v4SlideIndex+dir+p.slides.length)%p.slides.length;v4RefreshSelect();v4DisplayPhoto();}
+async function v4FullBackup(){const btn=qs('[data-v4="full-backup"]'),old=btn.textContent;btn.disabled=true;btn.textContent='Preparando…';
+ try{const imgs={};for(const p of state.projects){for(let i=0;i<p.slides.length;i++){const key=v4Key(p.id,i),blob=await v4GetPhoto(key);if(!blob)continue;const data=await new Promise((res,rej)=>{const reader=new FileReader();reader.onload=()=>res(reader.result);reader.onerror=()=>rej(reader.error);reader.readAsDataURL(blob);});imgs[key]=data;}}
+  const b=new Blob([JSON.stringify({format:'entre-ideias-completo-v4',exported:new Date().toISOString(),state,images:imgs})],{type:'application/json'});v4DownloadBlob('entre-ideias-backup-completo-v4.json',b);qs('#v4-backup-status').textContent=Object.keys(imgs).length+' imagens incluídas · '+(b.size/1024/1024).toFixed(1)+' MB.';
+ }catch(e){v4Msg('Falha no backup completo: '+e.message);}finally{btn.disabled=false;btn.textContent=old;}
+}
+async function v4RestoreFull(file){if(file.size>60*1024*1024)throw Error('O backup é maior que 60 MB');const data=JSON.parse(await file.text());if(data.format!=='entre-ideias-completo-v4'||!Array.isArray(data.state?.projects)||!Array.isArray(data.state?.metrics)||data.state.version!==1)throw Error('Backup não reconhecido');
+ if(!confirm('Restaurar este backup? Os projetos e dados atuais serão substituídos. Faça um backup antes de confirmar.'))return;
+ let restored=0;for(const [key,value] of Object.entries(data.images||{})){if(!/^post-[\w-]+::\d+$/.test(key)||!/^data:image\/jpeg;base64,/.test(value))continue;const b64=value.split(',')[1],bin=atob(b64),buf=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)buf[i]=bin.charCodeAt(i);await v4Db('put',key,new Blob([buf],{type:'image/jpeg'}));restored++;}
+ state={...initialState(),...data.state};for(const a of state.v4MuseumArts||[])if(a.id&&!art.some(x=>x.id===a.id))art.push(a);
+ save();render();qs('#v4-backup-status').textContent='Restauração concluída: '+restored+' imagens e '+state.projects.length+' projetos.';v4Msg('Backup completo restaurado com sucesso.');
+}
+document.addEventListener('click',async function(e){
+ const v4=e.target.closest('[data-v4]');if(v4){const op=v4.dataset.v4;if(op==='search-art')v4MuseumSearch();if(op==='prev-photo')v4SwitchSlide(-1);if(op==='next-photo')v4SwitchSlide(1);
+ if(op==='export-text-png')v4ExportOne(true);if(op==='export-clean-png')v4ExportOne(false);if(op==='export-zip')v4ExportZip();if(op==='copy-brief')copy(v4MakeBrief());
+ if(op==='delete-photo'){const p=current();if(p&&confirm('Remover a imagem anexada a este slide?')){await v4Db('delete',v4Key(p.id,v4ProjectIndex()));await v4DisplayPhoto();await v4UpdateFileCount();v4Msg('Imagem local removida deste slide.');}}
+ if(op==='fill-voice'){const p=current();if(p){p.v4Voiceover=v4VoiceDefault(p);save();v4RenderVoice();}}
+ if(op==='copy-voice'&&current())copy(qs('#v4-voiceover').value);
+ if(op==='export-srt'){const p=current();if(p){download('entre-ideias-legendas.srt',v4SRT(qs('#v4-voiceover').value));v4Msg('SRT de teste preparado; revise sincronização com o áudio final.');}}
+ if(op==='full-backup')v4FullBackup();
+ }
+ const pick=e.target.closest('[data-v4-art-pick]');if(pick)v4UseMuseumArt(Number(pick.dataset.v4ArtPick));
+ const idea=e.target.closest('[data-v4-idea]');if(idea){const pack=packs.find(x=>x.id===idea.dataset.v4Idea);if(pack){qs('#theme-picker').value=pack.id;generate();setPage('generate');v4Msg('Roteiro de '+pack.slides.length+' ideias criado. Personalize antes de publicar.');}}
+});
+document.addEventListener('change',async function(e){
+ if(e.target.id==='v4-slide'){v4SlideIndex=Number(e.target.value)||0;v4DisplayPhoto();}
+ if(e.target.id==='v4-img-input'){const f=e.target.files?.[0];e.target.value='';const p=current();if(!p){v4Msg('Primeiro crie um projeto.');return;}if(!f)return;
+  if(!/^image\//.test(f.type)||f.size>22*1024*1024){v4Msg('Escolha um arquivo de imagem com até 22 MB.');return;}
+  try{const n=await v4SetPhoto(p.id,v4ProjectIndex(),f);await v4DisplayPhoto();await v4UpdateFileCount();v4Msg('Pintura importada ('+Math.round(n/1024)+' KB) e vinculada ao slide.');}
+  catch(err){v4Msg('Falha ao importar imagem: '+err.message+'. Se o iPhone enviou HEIC, salve primeiro como JPG.');}
+ }
+ if(e.target.id==='v4-backup-input'){const f=e.target.files?.[0];e.target.value='';if(!f)return;try{await v4RestoreFull(f);}catch(err){v4Msg('Falha na restauração: '+err.message);}}
+ if(e.target.matches('[data-v2-art]')){const p=current();if(p){await v4Db('delete',v4Key(p.id,Number(e.target.dataset.v2Art)));v4DisplayPhoto();v4UpdateFileCount();}}
+});
+document.addEventListener('input',function(e){if(e.target.id==='v4-crop'){const p=current();if(p){p.v4Crops??={};p.v4Crops[v4ProjectIndex()]=Number(e.target.value);save();qs('#v4-crop-label').textContent=e.target.value+'%';const pos=e.target.value+'% 50%';qs('#v4-photo').style.objectPosition=pos;qs('#v4-preview-image').style.objectPosition=pos;}}
+ if(e.target.id==='v4-voiceover'){const p=current();if(p){p.v4Voiceover=e.target.value;save();v4VoiceMeter();}}
+ if(e.target.matches('[data-slide]')){qs('#v4-review').innerHTML=v4EditorialCheck(current());qs('#v4-photo-text').textContent=current()?.slides[v4ProjectIndex()]||'';}
+});
+qs('#v4-art-query').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();v4MuseumSearch();}});
+render();
+/* STUDIO_V5_START - melhoria progressiva sobre o estado V1 e o atelie V4 */
+const v5Version = '5.0';
+const v5DefaultLook = {aspect:'portrait',shade:60,vertical:49,style:'classic',zipMode:'clean'};
+function v5Ensure(){
+ if(!state.v5||typeof state.v5!=='object')state.v5={};
+ if(!state.v5.look||typeof state.v5.look!=='object')state.v5.look={...v5DefaultLook};
+ state.v5.look={...v5DefaultLook,...state.v5.look};
+ for(const p of state.projects){p.v5Credits??={};p.v5Checklist??={};}
+}
+v5Ensure();
+const v5Workspace=document.createElement('section');v5Workspace.className='v5-card';v5Workspace.id='v5-home-card';
+v5Workspace.innerHTML=`<div class="v5-toolbar"><div><span class="v4-kicker">CENTRAL DE PRODUÇÃO 5.0</span><h2>Próxima publicação, do início ao fim</h2></div><span class="v5-tag">Modo local · sem assinatura</span></div><div class="v5-grid3" id="v5-home-stats"></div><div id="v5-home-actions" class="v5-button-row"></div><p class="v5-small-print">As métricas históricas não são atualizadas automaticamente. Seus rascunhos ficam no navegador.</p>`;
+qs('#page-home .hero').after(v5Workspace);
+
+const v5Generator=document.createElement('section');v5Generator.className='v5-card';v5Generator.id='v5-generator';
+v5Generator.innerHTML=`<span class="v4-kicker">PUBLICAÇÃO COM CONTROLE</span><h2>Checklist antes de publicar</h2><p class="v5-caption">Marque apenas o que você conferiu. O progresso é uma lista operacional, não um certificado de qualidade.</p><div class="v5-progress"><div id="v5-progress-fill" style="width:0%"></div></div><p id="v5-progress-text" class="v5-caption"></p><div class="v5-checks" id="v5-checks"></div><div id="v5-alerts" class="v5-note"></div><div class="v5-colgrid" style="margin-top:14px"><div class="v5-field"><label for="v5-schedule" class="v5-label">DATA PLANEJADA</label><input type="date" id="v5-schedule"></div><div class="v5-field"><label for="v5-platform" class="v5-label">PLATAFORMA</label><select id="v5-platform"><option value="TikTok">TikTok</option><option value="Instagram">Instagram</option><option value="Ambos">TikTok + Instagram</option></select></div></div><div class="v5-button-row"><button type="button" class="primary sm" data-v5="plan-this">Adicionar ao calendário</button><button type="button" class="ghost sm" data-v5="open-workshop">Abrir Ateliê Visual</button></div><p class="v5-small-print">Registrar no calendário não publica nas plataformas.</p>`;
+qs('#page-generate .editor-layout').after(v5Generator);
+
+const v5MediaBox=document.createElement('section');v5MediaBox.className='v5-card';v5MediaBox.id='v5-media-box';
+v5MediaBox.innerHTML=`<span class="v4-kicker">ATELIÊ PRO · PINTURAS REAIS</span><h2>Importação em lote e formatos</h2><p class="v5-caption">Escolha várias imagens de uma vez. Elas serão associadas aos slides na ordem alfabética do nome do arquivo, começando pelo slide selecionado.</p><div class="v5-button-row"><label class="v5-media-label">📁 Importar várias pinturas<input type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" multiple id="v5-bulk" hidden></label><button class="ghost sm" data-v5="open-credits">Editar créditos do slide</button></div><div class="v5-colgrid"><div class="v5-field"><label for="v5-format" class="v5-label">FORMATO DE EXPORTAÇÃO</label><select id="v5-format"><option value="portrait">9:16 · Reels / TikTok (1080×1920)</option><option value="feed">4:5 · Instagram feed (1080×1350)</option></select></div><div class="v5-field"><label for="v5-zip" class="v5-label">CONTEÚDO DO ZIP</label><select id="v5-zip"><option value="clean">Imagens limpas + textos separados</option><option value="both">Imagens limpas e com texto</option><option value="text">Só imagens com texto</option></select></div></div><div class="v5-colgrid" style="margin-top:12px"><div class="v5-field"><label for="v5-shade" class="v5-label">SOMBRA PARA O TEXTO: <span id="v5-shade-value">60%</span></label><input id="v5-shade" type="range" min="10" max="90" step="5" value="60"></div><div class="v5-field"><label for="v5-vertical" class="v5-label">POSIÇÃO DO TEXTO: <span id="v5-vertical-value">49%</span></label><input id="v5-vertical" type="range" min="32" max="65" step="1" value="49"></div></div><div class="v5-colgrid"><div class="v5-field"><label class="v5-label" for="v5-font">TIPOGRAFIA DO SLIDE</label><select id="v5-font"><option value="classic">Clássica · Georgia</option><option value="modern">Moderna · sem serifa</option></select></div><div class="v5-field"><label class="v5-label" for="v5-start">COMEÇAR LOTE NO SLIDE</label><select id="v5-start"></select></div></div><p class="v5-hint" id="v5-bulk-status">As imagens são armazenadas neste iPhone/navegador. Faça backup completo para não perdê-las.</p><div class="v5-preview-lines" id="v5-photo-progress"></div><div class="v5-button-row"><button type="button" class="primary sm" data-v5="share-slide">Compartilhar PNG pelo iPhone</button><button type="button" class="secondary sm" data-v5="export-credits">Baixar créditos das obras</button></div><p class="v5-small-print">O formato 4:5 é adequado para carrosséis no feed. Não muda a resolução das fotos originais nem assegura direitos autorais.</p>`;
+qs('#page-atelier .v4-grid').before(v5MediaBox);
+
+const v5CreditEditor=document.createElement('section');v5CreditEditor.className='v5-card';v5CreditEditor.id='v5-credit-editor';
+v5CreditEditor.innerHTML=`<span class="v4-kicker">ORIGEM E LICENÇA</span><h2>Créditos da pintura selecionada</h2><p class="v5-caption">Os dados ajudam na organização; uma informação digitada aqui não verifica automaticamente a licença da obra.</p><div class="v5-colgrid"><div class="v5-field"><label class="v5-label" for="v5-credit-title">TÍTULO DA OBRA</label><input id="v5-credit-title" placeholder="Título"></div><div class="v5-field"><label class="v5-label" for="v5-credit-author">AUTOR / INSTITUIÇÃO</label><input id="v5-credit-author" placeholder="Nome do artista ou acervo"></div><div class="v5-field"><label class="v5-label" for="v5-credit-url">LINK DA FONTE</label><input id="v5-credit-url" inputmode="url" placeholder="https://..."></div><div class="v5-field"><label class="v5-label" for="v5-credit-license">SITUAÇÃO DA LICENÇA</label><select id="v5-credit-license"><option value="unknown">Não verificada</option><option value="public">Domínio público declarado pela fonte</option><option value="cc">Licença aberta · verificar condições</option><option value="permission">Autorização própria documentada</option></select></div></div><div class="v5-button-row"><button class="primary sm" data-v5="save-credit">Salvar créditos</button><button class="ghost sm" data-v5="close-credits">Fechar</button></div><p class="v5-credit-info" id="v5-credit-status"></p>`;
+v5MediaBox.after(v5CreditEditor);v5CreditEditor.hidden=true;
+
+const v5Analyze=document.createElement('section');v5Analyze.className='v5-card';v5Analyze.id='v5-analysis';
+v5Analyze.innerHTML=`<span class="v4-kicker">INTELIGÊNCIA EDITORIAL · DADOS HISTÓRICOS</span><h2>O que priorizar no próximo conteúdo</h2><p class="v5-caption">Comparação pelos seguidores ganhos a cada 1.000 visualizações. Ela ajuda a formular hipóteses, mas não prevê alcance futuro.</p><div id="v5-insights"></div><div class="v5-note v5-note-good">Teste formatos de alcance (paradoxos) junto de conteúdos com alta conversão (pensadores e habilidades). Sempre compare posts após intervalos equivalentes de publicação.</div>`;
+qs('#page-metrics > .panel').after(v5Analyze);
+
+const v5Help=document.createElement('section');v5Help.className='v5-card';
+v5Help.innerHTML=`<span class="v4-kicker">GUIA DE PRODUÇÃO</span><h2>Como o fluxo funciona</h2><div class="v5-grid3"><div><span class="v5-feature-subtitle">1. Roteiro</span><p class="v5-caption">Comece com uma das pautas, personalize o argumento e confira a autoria das ideias.</p></div><div><span class="v5-feature-subtitle">2. Pinturas</span><p class="v5-caption">Use o acervo do museu ou imagens reais do celular. Registre fonte e licença para cada slide.</p></div><div><span class="v5-feature-subtitle">3. Pacote</span><p class="v5-caption">Exporte ZIP, textos, PNGs e créditos. A publicação nas redes continua manual.</p></div></div>`;
+qs('#page-home .recommendation')?.after(v5Help);
+
+function v5Look(){v5Ensure();return state.v5.look}
+function v5ProjectCredits(p,i){p.v5Credits??={};return p.v5Credits[i]||null}
+function v5ValidURL(s){try{const u=new URL(String(s));return ['https:','http:'].includes(u.protocol)?u.href:''}catch(_){return ''}}
+function v5SetCredit(p,i,credit){p.v5Credits??={};p.v5Credits[i]={title:String(credit.title||'').slice(0,180),author:String(credit.author||'').slice(0,180),url:v5ValidURL(credit.url),license:['public','cc','permission'].includes(credit.license)?credit.license:'unknown'};save()}
+function v5AutofillCreditFromArt(p,i){const a=getArt(p.artIds?.[i]);if(!a)return null;return{title:a.name,author:a.author,url:v5ValidURL(a.source),license:'unknown'}}
+function v5LoadCredit(){const p=current(),idx=v4ProjectIndex();const info=p?(v5ProjectCredits(p,idx)||v5AutofillCreditFromArt(p,idx)):null;const d=info||{title:'',author:'',url:'',license:'unknown'};
+ for(const field of ['title','author','url'])qs('#v5-credit-'+field).value=d[field]||'';
+ qs('#v5-credit-license').value=d.license||'unknown';qs('#v5-credit-status').textContent='Slide '+(idx+1)+' · '+(d.license==='unknown'?'Licença ainda não verificada':'Situação registrada, sujeita à conferência da fonte.');
+}
+function v5DownloadCredits(){const p=current();if(!p){v4Msg('Crie um carrossel primeiro.');return;}
+ const lines=[['slide','obra','artista','url_da_fonte','situacao_da_licenca','observacao']];
+ for(let i=0;i<p.slides.length;i++){const c=v5ProjectCredits(p,i)||v5AutofillCreditFromArt(p,i)||{title:'',author:'',url:'',license:'unknown'};lines.push([i+1,c.title,c.author,c.url,c.license,'Conferir direitos da imagem especifica antes de publicar']);}
+ download('entre-ideias-creditos.csv',v3Csv(lines),'text/csv;charset=utf-8');
+}
+function v5Similarity(a,b){const stop=new Set(['a','o','as','os','de','da','do','das','dos','e','para','que','com','um','uma','5','cinco','formas','ideias','perguntas','sobre']);
+ const tokens=s=>new Set(String(s||'').toLocaleLowerCase('pt-BR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(x=>x.length>2&&!stop.has(x)));
+ const x=tokens(a),y=tokens(b);if(x.size===0||y.size===0)return 0;let both=0;for(const t of x)if(y.has(t))both++;return both/(x.size+y.size-both);
+}
+function v5Warnings(p){if(!p)return ['Nenhum projeto aberto.'];const list=[];const h=state.projects.filter(x=>x.id!==p.id).map(x=>({title:x.title,score:v5Similarity(p.title,x.title)})).filter(x=>x.score>=.6).sort((a,b)=>b.score-a.score);
+ if(h.length)list.push('Tema semelhante ao projeto “'+h[0].title+'”. Revise a abordagem para evitar repetição.');
+ const slideText=(p.slides||[]).map(s=>String(s||''));if(slideText.some(s=>s.length>155))list.push('Há textos com mais de 155 caracteres; revise legibilidade no celular.');
+ if((p.caption||'').match(/#[\p{L}\p{N}_]+/gu)?.length>4)list.push('A legenda utiliza mais de quatro hashtags.');
+ if(new Set(p.artIds||[]).size<(p.artIds||[]).length)list.push('A mesma referência de obra aparece em mais de um slide.');
+ let unknown=0;for(let i=0;i<slideText.length;i++){const c=v5ProjectCredits(p,i);if(!c||c.license==='unknown')unknown++;}if(unknown)list.push('Falta confirmar e registrar a licença de '+unknown+' obra(s).');
+ return list;
+}
+const v5Tasks=[['text','Revisei as ideias e a precisão filosófica'],['original','Confirmei que não estou repetindo um carrossel'],['source','Conferi autoria e licença das pinturas'],['cover','Revisei capa e legibilidade no celular'],['caption','Revisei legenda, CTA e hashtags'],['publishing','Conferi o pacote e o agendamento']];
+function v5Readiness(p){if(!p)return{done:0,total:v5Tasks.length,missing:7};const done=v5Tasks.filter(([id])=>p.v5Checklist?.[id]).length;return{done,total:v5Tasks.length};}
+function v5RenderChecklist(){const p=current(),checks=qs('#v5-checks'),percent=qs('#v5-progress-fill');if(!checks)return;
+ const r=v5Readiness(p);percent.style.width=(r.done/r.total*100)+'%';qs('#v5-progress-text').textContent=p?'Concluído manualmente: '+r.done+' de '+r.total+' verificações.':'Crie um carrossel para começar a revisão.';
+ checks.innerHTML=v5Tasks.map(([id,label])=>'<label><input data-v5-check="'+id+'" type="checkbox" '+(p?.v5Checklist?.[id]?'checked':'')+' '+(!p?'disabled':'')+'><span>'+safe(label)+'</span></label>').join('');
+ const w=p?v5Warnings(p):[];qs('#v5-alerts').innerHTML=w.length?'<strong>'+w.length+' ponto(s) para revisar</strong><ul class="v5-warnings">'+w.map(x=>'<li>'+safe(x)+'</li>').join('')+'</ul>':'<strong>Nenhum alerta textual automático.</strong><p class="v5-hint">Isso não substitui a revisão filosófica, da imagem e de licenças.</p>';
+ qs('#v5-schedule').value=p?.v5Schedule||v3LocalDate(new Date());qs('#v5-platform').value=p?.v5Platform||'TikTok';
+}
+function v5Home(){const p=current(),posts=state.projects||[],active=posts.filter(x=>x.status==='draft').length,ready=posts.filter(x=>x.status==='ready').length;
+ qs('#v5-home-stats').innerHTML=[['Rascunhos',active],['Prontos',ready],['Obras cadastradas',art.length]].map(([a,b])=>'<div class="v5-mini"><span>'+a+'</span><strong>'+fmt(b)+'</strong></div>').join('');
+ qs('#v5-home-actions').innerHTML=p?'<button class="primary sm" data-v5="open-generator">Continuar: '+safe(p.title.slice(0,52))+'</button><button class="secondary sm" data-v5="open-workshop">Abrir Ateliê</button>':'<button class="primary sm" data-v5="open-generator">Começar um carrossel</button>';
+}
+function v5Insights(){const arr=(state.metrics||[]).filter(x=>Number(x.views)>=1000&&Number(x.follows)>=0).map(x=>({...x,rate:1000*x.follows/x.views})).sort((a,b)=>b.rate-a.rate).slice(0,5);
+ qs('#v5-insights').innerHTML='<div class="v5-metric-table">'+arr.map((x,i)=>'<div style="margin:10px 0"><div class="bar-title"><span>'+String(i+1).padStart(2,'0')+' · '+safe(x.title)+'</span><span class="num">'+x.rate.toFixed(1).replace('.',',')+' seg./1k</span></div><div class="v5-bar"><span style="width:'+Math.min(100,Math.max(0,x.rate/Math.max(1,arr[0]?.rate)*100))+'%"></span></div></div>').join('')+'</div>';
+}
+function v5UpdateOptions(){const look=v5Look();qs('#v5-format').value=look.aspect;qs('#v5-zip').value=look.zipMode;qs('#v5-shade').value=look.shade;qs('#v5-vertical').value=look.vertical;qs('#v5-font').value=look.style;
+ qs('#v5-shade-value').textContent=look.shade+'%';qs('#v5-vertical-value').textContent=look.vertical+'%';
+ qs('#v4-photo-stage').style.aspectRatio=look.aspect==='feed'?'4 / 5':'9 / 16';const preview=qs('.v3-preview');if(preview)preview.style.aspectRatio=look.aspect==='feed'?'4 / 5':'9 / 16';
+ qs('#v4-photo-stage .v4-photo-text').style.top=look.vertical+'%';
+ qs('#v4-photo-stage .v4-photo-text').style.transform='translateY(-50%)';
+ qs('#v4-photo-stage .v4-photo-text').style.fontFamily=look.style==='modern'?'var(--sans)':'var(--serif)';
+ qs('#v4-photo-stage .v4-photo-shade').style.background='rgba(8,14,9,'+(look.shade/100*.65).toFixed(2)+')';
+}
+async function v5FileProgress(){const p=current(),el=qs('#v5-photo-progress');if(!p){el.innerHTML='';return;}
+ const id=p.id,arr=[];for(let i=0;i<p.slides.length;i++)arr.push(!!(await v4GetPhoto(v4Key(id,i))));
+ if(current()?.id!==id)return;
+ el.innerHTML=arr.map((ok,i)=>'<span class="'+(ok?'ok':'')+'" title="Slide '+(i+1)+': '+(ok?'com':'sem')+' imagem"></span>').join('');
+ qs('#v5-bulk-status').textContent=arr.filter(Boolean).length+' de '+arr.length+' imagens anexadas · Confira a ordem e a licença das pinturas.';
+}
+async function v5Refresh(){v5Ensure();v5Home();v5RenderChecklist();v5Insights();v5UpdateOptions();v5FileProgress();
+ const p=current(),sel=qs('#v5-start'),idx=Math.max(0,Math.min(v4ProjectIndex(),(p?.slides.length||1)-1));
+ sel.innerHTML=p?p.slides.map((_,i)=>'<option value="'+i+'">Slide '+(i+1)+'</option>').join(''):'<option value="0">Abra um projeto</option>';sel.value=String(idx);
+ v5LoadCredit();
+}
+const v5PrevRender=render;render=function(){v5PrevRender();v5Refresh();};
+const v5PrevSetPage=setPage;setPage=function(id){v5PrevSetPage(id);if(id==='atelier')v5Refresh();};
+const v5PrevDisplay=v4DisplayPhoto;v4DisplayPhoto=async function(){await v5PrevDisplay();v5UpdateOptions();v5FileProgress();v5LoadCredit();};
+
+// A mesma imagem do acervo permanece, mas o tamanho do canvas obedece ao destino.
+v4Canvas=async function(p,idx,withText){const blob=await v4GetPhoto(v4Key(p.id,idx));if(!blob)throw Error('O slide '+(idx+1)+' está sem pintura.');const img=await v4ReadImage(blob),opts=v5Look();
+ const W=1080,H=opts.aspect==='feed'?1350:1920;
+ const c=document.createElement('canvas');c.width=W;c.height=H;const ctx=c.getContext('2d');v4Cover(ctx,img,0,0,W,H,v4CropValue(p,idx));
+ if(withText){const shade=ctx.createLinearGradient(0,0,0,H),strength=opts.shade/100;
+ shade.addColorStop(0,'rgba(6,12,8,'+(strength*.8)+')');shade.addColorStop(.38,'rgba(6,12,8,'+(strength*.38)+')');shade.addColorStop(1,'rgba(6,12,8,'+(strength*.96)+')');ctx.fillStyle=shade;ctx.fillRect(0,0,W,H);
+ const text=String(p.slides[idx]||'');const font=opts.style==='modern'?'Arial,sans-serif':'Georgia,serif';let size=opts.aspect==='feed'?65:76,lines=[];
+ while(size>=34){ctx.font=(opts.style==='modern'?'700 ':'600 ')+size+'px '+font;lines=v4Wrap(ctx,text,875);if(lines.length<=8&&lines.every(x=>ctx.measureText(x).width<=875))break;size-=3;}
+ let y=Math.max(90,Math.min(H-120,(H*opts.vertical/100)-(lines.length-1)*size*1.27/2));ctx.shadowColor='#030603';ctx.shadowBlur=20;ctx.shadowOffsetY=4;ctx.fillStyle='#f7f1e5';ctx.textAlign='center';
+ for(const line of lines){ctx.fillText(line,W/2,y,890);y+=size*1.27;}ctx.shadowBlur=0;ctx.shadowOffsetY=0;
+ ctx.font='700 21px Arial,sans-serif';ctx.fillStyle='#e8d7b4';ctx.fillText('ENTRE IDEIAS · QUESTIONE TUDO',W/2,H-73);ctx.fillText(String(idx+1).padStart(2,'0')+' / '+String(p.slides.length).padStart(2,'0'),W/2,65);
+ }
+ return await new Promise((resolve,reject)=>c.toBlob(blob=>blob?resolve(blob):reject(Error('Canvas não conseguiu exportar PNG')),'image/png'));
+};
+function v5CreditCSV(p){return v3Csv([['slide','obra','autor','fonte','licenca_declarada','revisao'],...p.slides.map((_,i)=>{const c=v5ProjectCredits(p,i)||v5AutofillCreditFromArt(p,i)||{title:'',author:'',url:'',license:'unknown'};return[i+1,c.title,c.author,c.url,c.license,'Verificar a ficha da obra e o arquivo usado antes de publicar'];})]);}
+v4ExportZip=async function(){const p=current();if(!p){v4Msg('Crie um carrossel primeiro.');return;}
+ const btn=qs('[data-v4="export-zip"]'),old=btn.textContent,files=[],missing=[],opts=v5Look();btn.disabled=true;
+ try{for(let i=0;i<p.slides.length;i++){
+  const img=await v4GetPhoto(v4Key(p.id,i));if(!img){missing.push(i+1);continue;}btn.textContent='Exportando '+(i+1)+'/'+p.slides.length+'…';
+  const variants=opts.zipMode==='both'?[false,true]:opts.zipMode==='text'?[true]:[false];
+  for(const text of variants){const b=await v4Canvas(p,i,text),name='slides/slide-'+String(i+1).padStart(2,'0')+'-'+(text?'com-texto':'limpo')+'.png';files.push({name,bytes:new Uint8Array(await b.arrayBuffer())});}
+ }
+ files.push({name:'roteiro.txt',bytes:new TextEncoder().encode(v4RoteiroTxt(p))});
+ files.push({name:'legenda.txt',bytes:new TextEncoder().encode(p.caption||'')});
+ files.push({name:'creditos-das-obras.csv',bytes:new TextEncoder().encode(v5CreditCSV(p))});
+ files.push({name:'LEIA-ME.txt',bytes:new TextEncoder().encode('ENTRE IDEIAS STUDIO 5.0\nFormato: '+(opts.aspect==='feed'?'1080x1350':'1080x1920')+'\nSlides sem imagem: '+(missing.join(', ')||'nenhum')+'\nOs textos estao separados no roteiro. Confira direitos autorais, fontes e informacoes filosoficas antes de publicar.\nOs PNGs so incluem as imagens anexadas.\n')});
+ const filename='entre-ideias-'+(opts.aspect==='feed'?'feed':'reels')+'-'+p.created+'.zip';v4DownloadBlob(filename,v4Zip(files));v4Msg('ZIP preparado com '+files.length+' arquivos. '+(missing.length?'Faltam os slides '+missing.join(', ')+'.':'Todos os slides foram exportados.'));
+ }catch(e){v4Msg('Não foi possível montar ZIP: '+e.message);}finally{btn.disabled=false;btn.textContent=old;}
+};
+
+/* Reels de pinturas: gravacao local com MediaRecorder, sem rede nem IA generativa. */
+const v5VideoPanel=document.createElement('section');v5VideoPanel.className='v5-card';v5VideoPanel.id='v5-video-box';
+v5VideoPanel.innerHTML=`<span class="v4-kicker">REELS CINEMATOGRÁFICO · BETA</span><h2>Transformar pinturas em um vídeo</h2><p class="v5-caption">Cria um vídeo silencioso com os slides e movimentos de câmera. Não é geração por IA. Funciona apenas nos navegadores que aceitam gravar um canvas; o formato final depende do navegador.</p><div class="v5-video-controls"><div class="v5-field"><label class="v5-label" for="v5-video-time">DURAÇÃO</label><select id="v5-video-time"><option value="12">12 segundos (4 cenas)</option><option value="18">18 segundos (6 cenas)</option><option value="21">21 segundos (7 cenas)</option></select></div><div class="v5-field"><label class="v5-label" for="v5-video-text">TEXTO SOBRE O VÍDEO</label><select id="v5-video-text"><option value="yes">Exibir textos dos slides</option><option value="no">Só pinturas e movimento</option></select></div></div><canvas class="v5-video-screen" id="v5-video-preview" width="540" height="960" aria-label="Prévia do Reels"></canvas><div class="v5-video-buttons"><button type="button" class="secondary" data-v5-video="preview">Pré-visualizar</button><button type="button" class="primary" data-v5-video="record">Exportar vídeo</button><button type="button" class="ghost" data-v5-video="stop">Parar</button></div><p class="v5-video-console" id="v5-video-info">Para montar o vídeo, crie um roteiro e anexe pinturas aos slides no Ateliê. Áudio/narração podem ser adicionados depois no CapCut.</p>`;
+qs('#page-reels .reels-panel').after(v5VideoPanel);
+let v5VidRunning=false,v5VidToken=0;
+function v5VidMessage(s){qs('#v5-video-info').textContent=s}
+async function v5GetVideoFrames(p,n){const all=[];for(let i=0;i<n;i++){const b=await v4GetPhoto(v4Key(p.id,i));all.push(b?await v4ReadImage(b):null);}return all}
+function v5DrawVideo(ctx,images,slides,elapsed,duration,showText){
+ const n=images.length,W=ctx.canvas.width,H=ctx.canvas.height,sec=duration/n;
+ const idx=Math.max(0,Math.min(n-1,Math.floor(elapsed/sec))),local=(elapsed%sec)/sec,img=images[idx];
+ ctx.fillStyle='#1c291e';ctx.fillRect(0,0,W,H);
+ if(img){ctx.save();ctx.translate(W/2,H/2);const zoom=1.02+.075*local;ctx.scale(zoom,zoom);const shift=(local-.5)*25;ctx.translate(shift,0);
+ const scale=Math.max(W/img.naturalWidth,H/img.naturalHeight),w=img.naturalWidth*scale,h=img.naturalHeight*scale;
+ ctx.drawImage(img,-w/2,-h/2,w,h);ctx.restore();}
+ if(showText){let shade=ctx.createLinearGradient(0,0,0,H);shade.addColorStop(0,'rgba(5,10,7,.48)');shade.addColorStop(.5,'rgba(5,10,7,.29)');shade.addColorStop(1,'rgba(5,10,7,.77)');ctx.fillStyle=shade;ctx.fillRect(0,0,W,H);
+ ctx.textAlign='center';ctx.font='600 34px Georgia,serif';let lines=v4Wrap(ctx,slides[idx]||'',460),size=34;
+ while(lines.length>6&&size>22){size-=2;ctx.font='600 '+size+'px Georgia,serif';lines=v4Wrap(ctx,slides[idx]||'',460)}
+ const step=size*1.3,fade=Math.min(1,local*6,(1-local)*9);ctx.fillStyle='#f6efdc';ctx.shadowColor='rgba(0,0,0,.85)';ctx.shadowBlur=13;
+ ctx.globalAlpha=Math.max(0,fade);let y=H*.51-(lines.length-1)*step/2;
+ for(const line of lines){ctx.fillText(line,W/2,y,470);y+=step;}ctx.globalAlpha=1;ctx.shadowBlur=0;
+ }
+ ctx.fillStyle='#e2cfac';ctx.textAlign='center';ctx.font='600 12px Arial,sans-serif';ctx.fillText('ENTRE IDEIAS  ·  QUESTIONE TUDO',W/2,H-46);
+ ctx.textAlign='right';ctx.font='500 12px Arial,sans-serif';ctx.fillText(String(idx+1).padStart(2,'0')+'/'+String(n).padStart(2,'0'),W-30,38);
+}
+async function v5VideoRun(record){
+ if(v5VidRunning)return;const p=current();if(!p){v5VidMessage('Crie um projeto no editor para montar o Reels.');return;}
+ const duration=Number(qs('#v5-video-time').value),n=Math.min(p.slides.length,duration===12?4:duration===18?6:7),canvas=qs('#v5-video-preview');
+ const ctx=canvas.getContext('2d');const showText=qs('#v5-video-text').value==='yes';let frames;
+ v5VidRunning=true;let token=++v5VidToken;const buttons=qsa('[data-v5-video="record"],[data-v5-video="preview"]');buttons.forEach(b=>b.disabled=true);
+ try{v5VidMessage('Preparando imagens locais…');frames=await v5GetVideoFrames(p,n);if(!frames.some(Boolean))throw Error('Anexe pelo menos uma pintura no Ateliê.');
+  if(record&&(!canvas.captureStream||!window.MediaRecorder))throw Error('Este navegador não suporta gravar vídeo do canvas. Use a prévia ou exporte os PNGs.');
+  const stream=record?canvas.captureStream(15):null;
+  const types=['video/mp4;codecs=avc1.42E01E','video/mp4','video/webm;codecs=vp8','video/webm'];
+  const type=record?types.find(t=>MediaRecorder.isTypeSupported(t)):null;
+  if(record&&!type)throw Error('O navegador não oferece um formato de vídeo gravável.');
+  let recorder=null,chunks=[],stopPromise=null;
+  if(record){recorder=new MediaRecorder(stream,{mimeType:type,videoBitsPerSecond:2200000});stopPromise=new Promise((resolve,reject)=>{recorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};recorder.onerror=()=>reject(Error('Falha no gravador do navegador'));recorder.onstop=()=>resolve();});recorder.start(1000);}
+  const started=performance.now();v5VidMessage((record?'Gravando':'Pré-visualizando')+' '+n+' cenas; '+frames.filter(Boolean).length+' pinturas disponíveis.');
+  await new Promise(resolve=>{function frame(){const seconds=Math.min(duration,(performance.now()-started)/1000);v5DrawVideo(ctx,frames,p.slides,seconds,duration,showText);
+   if(seconds>=duration||token!==v5VidToken){resolve();return;}setTimeout(frame,1000/15);}frame();});
+  if(recorder&&recorder.state!=='inactive'){recorder.stop();await stopPromise;}
+  stream?.getTracks().forEach(x=>x.stop());
+  if(record&&token===v5VidToken){const ext=type.startsWith('video/mp4')?'mp4':'webm',mime=type.split(';')[0],blob=new Blob(chunks,{type:mime});if(blob.size<1000)throw Error('O gravador gerou um arquivo vazio.');v4DownloadBlob('entre-ideias-reels-'+duration+'s.'+ext,blob);v5VidMessage('Vídeo '+ext.toUpperCase()+' preparado ('+(blob.size/1024/1024).toFixed(1)+' MB). Confira o arquivo antes de postar. Áudio não incluído.');}
+  else if(token===v5VidToken)v5VidMessage('Prévia concluída. O vídeo ainda não foi exportado.');
+ }catch(e){v5VidMessage('Não foi possível concluir: '+e.message);}finally{if(token===v5VidToken)v5VidRunning=false;buttons.forEach(b=>b.disabled=false);}
+}
+document.addEventListener('click',function(e){const b=e.target.closest('[data-v5-video]');if(!b)return;
+ const op=b.dataset.v5Video;if(op==='stop'){v5VidToken++;v5VidRunning=false;v5VidMessage('Prévia interrompida.');qsa('[data-v5-video="record"],[data-v5-video="preview"]').forEach(x=>x.disabled=false);return;}
+ if(op==='preview')v5VideoRun(false);if(op==='record')v5VideoRun(true);
+});
+
+// Substituir o texto legível do botão sem criar chamadas de serviço fictícias.
+qs('[data-v4="export-zip"]').textContent='↓ Exportar pacote do Instagram/TikTok';
+async function v5Bulk(files){const p=current();if(!p){v4Msg('Abra um carrossel primeiro.');return;}
+ const sorted=[...files].sort((a,b)=>a.name.localeCompare(b.name,'pt-BR',{numeric:true})).filter(x=>x.type.startsWith('image/'));
+ const from=Number(qs('#v5-start').value)||0;const choices=sorted.slice(0,p.slides.length-from);if(!choices.length){v4Msg('Não há espaço para essas imagens a partir do slide escolhido.');return;}
+ if(sorted.length>choices.length)toast('Algumas imagens excedentes não serão usadas.');
+ const mapping=choices.map((f,i)=>(from+i+1)+': '+f.name).join('\n');if(!confirm('Associar estas pinturas nesta ordem?\n\n'+mapping+'\n\nImagens já anexadas nesses slides serão substituídas.'))return;
+ const original=qs('#v5-bulk-status').textContent;let ok=0,failed=[];
+ for(let i=0;i<choices.length;i++){const f=choices[i];qs('#v5-bulk-status').textContent='Importando '+(i+1)+'/'+choices.length+': '+f.name;
+  if(f.size>22*1024*1024){failed.push(f.name+' (maior que 22 MB)');continue;}
+  try{await v4SetPhoto(p.id,from+i,f);v5SetCredit(p,from+i,{title:f.name.replace(/\.[^.]+$/,''),author:'Imagem importada do iPhone',url:'',license:'unknown'});ok++;}
+  catch(err){failed.push(f.name+' ('+err.message+')');}}
+ if(current()?.id===p.id){await v4DisplayPhoto();await v4UpdateFileCount();v5FileProgress();}
+ qs('#v5-bulk-status').textContent=ok+' pinturas importadas. '+(failed.length?'Falharam: '+failed.join(', '):'Confira os créditos de cada slide.');v4Msg(ok+' imagens adicionadas ao projeto.');
+}
+async function v5ShareSlide(){const p=current();if(!p){v4Msg('Abra um carrossel primeiro.');return;}
+ try{const idx=v4ProjectIndex(),png=await v4Canvas(p,idx,false),filename='entre-ideias-slide-'+String(idx+1).padStart(2,'0')+'-limpo.png';
+  if(!('share' in navigator)||!('canShare' in navigator)){v4DownloadBlob(filename,png);v4Msg('Compartilhamento não suportado; PNG preparado para download.');return;}
+  const file=new File([png],filename,{type:'image/png'});if(!navigator.canShare({files:[file]})){v4DownloadBlob(filename,png);v4Msg('PNG preparado para download.');return;}
+  try{await navigator.share({files:[file],title:'Entre Ideias — pintura limpa'});}catch(e){if(e.name!=='AbortError')v4Msg('Não foi possível compartilhar: '+e.message);}
+ }catch(e){v4Msg('Falha ao preparar imagem: '+e.message);}
+}
+function v5PlanCurrent(){const p=current();if(!p){v4Msg('Crie um projeto primeiro.');return;}
+ const date=qs('#v5-schedule').value,platform=qs('#v5-platform').value;if(!/^\d{4}-\d{2}-\d{2}$/.test(date)){v4Msg('Escolha uma data válida.');return;}
+ p.v5Schedule=date;p.v5Platform=platform;
+ const existing=state.plan.find(x=>x.v5ProjectId===p.id);const item={id:existing?.id||'plan-'+Date.now(),v5ProjectId:p.id,date,title:p.title,topic:p.themeId,format:'Carrossel',v5Platform:platform,goal:'Seguidores',status:p.status==='published'?'published':p.status==='ready'?'inprogress':'planned'};
+ if(existing)Object.assign(existing,item);else state.plan.push(item);save();v3RenderPlan();v4RenderPipeline();v5Home();v4Msg('Agendado no calendário local para '+date+'. A postagem continua manual.');
+}
+// Quando o usuario escolhe do museu, registra a fonte e a alegacao da API.
+const v5MuseumPrevious=v4UseMuseumArt;
+v4UseMuseumArt=async function(i){const p=current(),idx=v4ProjectIndex(),a=v4LastResults[i];await v5MuseumPrevious(i);if(p&&a?.is_public_domain===true){v5SetCredit(p,idx,{title:a.title,author:a.artist_display||'Art Institute of Chicago',url:'https://www.artic.edu/artworks/'+a.id,license:'public'});if(current()?.id===p.id)v5LoadCredit();}};
+
+document.addEventListener('click',function(e){const btn=e.target.closest('[data-v5]');if(!btn)return;
+ const action=btn.dataset.v5;
+ if(action==='open-workshop')setPage('atelier');
+ if(action==='open-generator')setPage('generate');
+ if(action==='open-credits'){v5CreditEditor.hidden=false;v5LoadCredit();v5CreditEditor.scrollIntoView({block:'nearest',behavior:'smooth'});}
+ if(action==='close-credits')v5CreditEditor.hidden=true;
+ if(action==='save-credit'){const p=current();if(!p){v4Msg('Crie um projeto primeiro.');return;}const i=v4ProjectIndex();v5SetCredit(p,i,{title:qs('#v5-credit-title').value,author:qs('#v5-credit-author').value,url:qs('#v5-credit-url').value,license:qs('#v5-credit-license').value});v5RenderChecklist();v5LoadCredit();v4Msg('Crédito do slide '+(i+1)+' salvo no navegador.');}
+ if(action==='export-credits')v5DownloadCredits();
+ if(action==='plan-this')v5PlanCurrent();
+ if(action==='share-slide')v5ShareSlide();
+});
+document.addEventListener('change',function(e){if(e.target.matches('[data-v5-check]')){const p=current();if(!p)return;p.v5Checklist??={};p.v5Checklist[e.target.dataset.v5Check]=e.target.checked;save();v5RenderChecklist();}
+ if(e.target.id==='v5-bulk'){const files=Array.from(e.target.files||[]);e.target.value='';if(files.length)v5Bulk(files);}
+ if(['v5-format','v5-zip','v5-font'].includes(e.target.id)){const opt=v5Look();if(e.target.id==='v5-format')opt.aspect=e.target.value;if(e.target.id==='v5-zip')opt.zipMode=e.target.value;if(e.target.id==='v5-font')opt.style=e.target.value;save();v5UpdateOptions();}
+ if(['v5-schedule','v5-platform'].includes(e.target.id)){const p=current();if(p){p.v5Schedule=qs('#v5-schedule').value;p.v5Platform=qs('#v5-platform').value;save();}}
+ if(e.target.id==='v4-slide')v5Refresh();
+});
+document.addEventListener('input',function(e){if(e.target.id==='v5-shade'){v5Look().shade=Number(e.target.value);save();v5UpdateOptions();}
+ if(e.target.id==='v5-vertical'){v5Look().vertical=Number(e.target.value);save();v5UpdateOptions();}
+ if(e.target.matches('[data-slide]')||e.target.id==='v2-caption')v5RenderChecklist();
+});
+const v5PrevSetPhoto=v4SetPhoto;v4SetPhoto=async function(...args){const size=await v5PrevSetPhoto(...args);v5FileProgress();return size;};
+// Manter o estado e imagens V4; nenhuma migracao destrutiva e realizada.
+render();
+/* STUDIO_V5_END */
+
+/* STUDIO_V4_END */
+
+/* STUDIO_V3_END */
+
 })();
 
 </script>
